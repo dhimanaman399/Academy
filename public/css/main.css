@@ -1,0 +1,47 @@
+/*
+    Section :: testimonials
+*/
+.testimonialsSection {
+  height: 100%;
+}
+.testimonialsSection div {
+  height: 100%;
+}
+.testimonials {
+  background-color: sandybrown;
+}
+.testimonialsubTitle {
+  color: #33a1d9;
+  font-size: 35px;
+  text-align: center;
+  width: 30%;
+  margin-left: 30%;
+
+  border-bottom: #2a960c solid 1px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  margin-top: 10px;
+
+  text-transform: uppercase;
+  font-family: Lato, sans-serif;
+}
+.testimonialContain div img {
+  border-radius: 100%;
+}
+.testimonialContain div h2 span {
+  font-size: 70%;
+  color: #2c970e;
+  text-transform: none;
+}
+.testimonialContain div blockquote p {
+  text-align: justify;
+}
+
+.try1 {
+  background-color: saddlebrown;
+  height: 100%;
+}
+.try1 div {
+  height: 100%;
+}

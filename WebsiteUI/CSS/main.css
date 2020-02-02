@@ -1,0 +1,188 @@
+/*common css*/
+.red{color:red;}
+.pl2{ padding-left:2px;}
+.pr2{ padding-right:2px;}
+.pl5{ padding-left:5px;}
+.mt10{margin-top:10px;}
+/*Visa search*/
+.visaContainer{ background:#efeff0; min-height: 425px;  width:100%;  margin:0; float:left;}
+.vsSrchPanel{ background:url(../images/VisaSearchBg.jpg) no-repeat top center; background-size:cover;float: left; width: 100%; padding:50px 0;}
+.vsSrchPanel h1{ padding:10px 0 60px; font-size:25px; text-transform:uppercase; color:#fff; margin:0px; text-shadow: 1px 3px 3px #053e92;}
+.vsInputValue{ position:relative; width:100%; float:left; background:#fff; border-radius:5px; margin-bottom:5px; border-radius:5px;}
+.visaSrchForm{ margin:0 auto; width:82%;}
+.visaSrchForm .ga{ padding:0 5px;}
+.vsInputValue input[type="text"],.vsInputValue select{ border:0px; padding:10px 20px 10px 35px; width:100%; float:left; height:36px;    border-radius: 5px;}
+.vsInputValue i,.vsInputValue label{ position:absolute; left:7px; top:8px; font-size:20px; color:#2d2d2d;}
+.vsBtn{ display:inline-block;font-family: inherit; text-align:center; cursor:pointer; color:#111c4c; font-size:15px; text-transform:uppercase; border-style: solid; border-width: 1px; border-color: rgb(255, 255, 255);  border-radius: 5px;  background-image: -moz-linear-gradient( 90deg, rgb(224,168,0) 0%, rgb(253,239,146) 53%, rgb(224,169,2) 99%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(224,168,0) 0%, rgb(253,239,146) 53%, rgb(224,169,2) 99%); background-image: -ms-linear-gradient( 90deg, rgb(224,168,0) 0%, rgb(253,239,146) 53%, rgb(224,169,2) 99%);
+}
+.vsBtn.l{ font-size: 17px; padding:5px 16px; font-weight: 700; }
+.vsBtn.m{ font-size:14px;padding:6px 8px;font-weight:500; }
+.vsBtn.s{ font-size:12px; padding:5px 6px;font-weight:400;}
+.vsBtn:hover{background:#0a144c; color:#fff;}
+.gabtn,.gabtn_active{ display:inline-block;font-family: inherit; text-align:center; cursor:pointer;font-size:15px; text-transform:uppercase; text-decoration:none; border:0px; border-radius:5px;    margin: 2px 3px;}
+.gabtn,.gabtn_active:hover{ color:#fff; background:#0a144c; }
+.gabtn_active,.gabtn:hover{ color:#0a144c; background:#edb133; }
+.gabtn.l,.gabtn_active.l{ font-size: 14px; padding:8px 12px; font-weight:600; }
+.gabtn.m,.gabtn_active.m{ font-size:15px;padding:6px 12px;font-weight:500; }
+.gabtn.s,.gabtn_active.s{ font-size:12px; padding:5px 6px;font-weight:400;}
+.vsStepPanel{ padding:20px 0; margin:0 auto; width:90%;}
+.vsStepPanel h2{color:#000000; padding:20px 0;font-size: 24px; font-weight: 500; margin: 0px;}
+.vsStep{ list-style-type:none; float:left; width:100%; padding:0px; margin:0px;}
+.vsStep li{float:left; width:25%; padding:10px; margin:0px;}
+.vsStep div{border-radius: 10px;-webkit-transition-duration: 0.3s;    -webkit-transition-timing-function: ease-out;  transition-duration: 0.3s; float:left; width:100%; padding:10px;  background-color: rgb(255, 255, 255);  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.05);position: relative;}
+.vsStep label{font-size: 12px;text-transform: uppercase;color: #c5c5c5;}
+.vsStep em{font-size:14px;padding: 10px 0 25px;}
+.vsStep svg{ fill:#081546; }
+.vsStep span{font-size: 14px;text-transform: uppercase;color: #061445;}
+.vsStep div:hover svg{ transform: scale(1.3) translateZ(0);transition:all ease-out 0.3s;-webkit-transition:all ease-out 0.3s;}
+.vsStep div:hover label{ color:#061445; font-weight:bold; transition:all ease-out 0.3s;-webkit-transition:all ease-out 0.3s;}
+/*search Loading PopUp*/
+/*======search loader ==========*/
+.LoadingPanel{background: #ebeef6;position:fixed;top:0px;bottom:0px;left:0px;right:0px;z-index:9999;overflow:auto;}
+.searchLoadingPopUp{margin:95px auto 50px;padding:30px;width:600px;background:#fff url(../images/visaloaderBg.jpg) no-repeat center center;border-radius: 10px;position: relative;overflow: hidden;box-shadow: 2.903px 11.644px 8.82px 0.18px rgba(0, 0, 0, 0.08);}
+.search_logo { width: 100%; float: left; text-align: center; }
+.search_logo img{ max-width:100%;}
+.search_head { text-align: center; float: left; width: 100%; margin: 10px 0; }
+.search_head b {font-size: 21px; color: #094D87;}
+.search_head p { padding: 0 0 3px; font-size: 15px;font-weight: bold; color: #2c3d5a; }
+.search_head p dfn { font-style: normal; font-size: 16px; padding: 5px 0 0; display:block; }
+.searchLoadingPopUp fieldset{ border:1px solid #094D87; border-radius:15px;padding:20px 30px;}
+.searchLoadingPopUp legend{ font-size:18px; text-align:center; font-weight:bold; padding:0 5px; color:#094D87}
+.searchLoadingPopUp table{ width:98%; text-align:center; background:#094D87; border-collapse:collapse;}
+.searchLoadingPopUp td{ border:1px solid #fff; padding:10px; color:#fff;}
+.bottomLoadingLine{
+  background-image: -moz-linear-gradient( 1deg, rgb(226,229,231) 0%, rgb(217,199,158) 41%, rgb(208,169,84) 51%, rgb(208,169,84) 54%, rgb(208,169,84) 63%, rgb(217,199,158) 80%, rgb(226,229,231) 87%);
+  background-image: -webkit-linear-gradient( 1deg, rgb(226,229,231) 0%, rgb(217,199,158) 41%, rgb(208,169,84) 51%, rgb(208,169,84) 54%, rgb(208,169,84) 63%, rgb(217,199,158) 80%, rgb(226,229,231) 87%);
+  background-image: -ms-linear-gradient( 1deg, rgb(226,229,231) 0%, rgb(217,199,158) 41%, rgb(208,169,84) 51%, rgb(208,169,84) 54%, rgb(208,169,84) 63%, rgb(217,199,158) 80%, rgb(226,229,231) 87%);
+  height: 6px; width: 100%; position: absolute; bottom: 0px;z-index: 99; left: 0; animation:Loadingline 2s infinite linear; -webkit-animation:Loadingline 2s infinite linear;}
+.bottomLoadingbg{ position:absolute; background:rgb(226,229,231);  height: 6px; width: 100%;z-index:9; position: absolute; bottom: 0px; left: 0; }
+
+@keyframes Loadingline{0%{-webkit-animation-timing-function:cubic-bezier(.15,0,.515058,.409685);animation-timing-function:cubic-bezier(.15,0,.515058,.409685);-webkit-transform:translateX(-54.888891%);transform:translateX(-54.888891%)}25%{-webkit-animation-timing-function:cubic-bezier(.310330,.284058,.8,.733712);animation-timing-function:cubic-bezier(.310330,.284058,.8,.733712);-webkit-transform:translateX(-17.236978%);transform:translateX(-17.236978%)}48.35%{-webkit-animation-timing-function:cubic-bezier(.4,.627035,.6,.902026);animation-timing-function:cubic-bezier(.4,.627035,.6,.902026);-webkit-transform:translateX(29.497274%);transform:translateX(29.497274%)}to{-webkit-transform:translateX(105.388891%);transform:translateX(105.388891%)}}@-webkit-keyframes auxiliary-indeterminate-translate{0%{-webkit-animation-timing-function:cubic-bezier(.15,0,.515058,.409685);animation-timing-function:cubic-bezier(.15,0,.515058,.409685);-webkit-transform:translateX(-54.888891%);transform:translateX(-54.888891%)}25%{-webkit-animation-timing-function:cubic-bezier(.310330,.284058,.8,.733712);animation-timing-function:cubic-bezier(.310330,.284058,.8,.733712);-webkit-transform:translateX(-17.236978%);transform:translateX(-17.236978%)}48.35%{-webkit-animation-timing-function:cubic-bezier(.4,.627035,.6,.902026);animation-timing-function:cubic-bezier(.4,.627035,.6,.902026);-webkit-transform:translateX(29.497274%);transform:translateX(29.497274%)}to{-webkit-transform:translateX(105.388891%);transform:translateX(105.388891%)}}
+
+/*Result Page*/
+.visaModifyForm{ margin: 0 auto; width:85%;}
+.mdfschtxt{ color:#fff; text-transform:uppercase; padding-bottom: 2px;display: block;    text-shadow: 1px 3px 3px #696969;}
+.visaModifyForm .vsInputValue i,.visaModifyForm .vsInputValue .fa-calendar-alt{background: #0a144c;left: 1px;height: 34px;top: 1px;width: 30px;font-size: 15px;text-align: center;padding-top: 10px;border-radius: 5px 0px 0px 5px;color: #fff;}
+.visaModifyForm .vsInputValue input[type="text"],.visaModifyForm .vsInputValue select{  padding: 10px 20px 10px 40px;}
+.visaModifyForm .fa-calendar-alt{font-size:20px; padding-top:8px;}
+.modfybtn{display:inline-block;}
+.modfybtn:after{content:"";background: #0a144c;height: 24px;width: 26px;position:absolute;left: 1px;top: 7px;}
+.modfybtn i{font-size: 37px;color:#fff;position: absolute;top: 0px;z-index:9;left: 0px;}
+.modfybtn:hover:after{background:rgb(224,169,2);}
+.visaResultPanel{padding: 15px;}
+.visaResultPanel h1{float:left;width: 100%;font-size: 18px;}
+.visatypeTab{float:left;width: 100%;margin: 0px;padding: 25px 0 0;list-style-type: none;}
+.visatypeTab li{float:left;padding-right: 5px;}
+.visatypeTab a{float:left;background: #eaaa26;padding:10px 16px;border-radius: 10px 10px 0 0;text-align: center;text-decoration: none;color: #0a144c;font-weight: 600; font-size: 14px;}
+.visatypeTab a.active,.visatypeTab a:hover{background: #fff;color: #0a144c;}
+.visaResulgax{background: #fff;    padding: 25px 15px;}
+.visaResultTbl{border:0px; width:100%;box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.06); border-collapse:collapse; border:2px solid #f3f3f3; color:#061445;}
+.visaResultTbl tr{background:#fff;}
+.visaResultTbl th {font-size:15px;border:2px solid #f3f3f3; background:#f6f8fc;padding:10px; text-align:left; font-weight: 400;}
+.visaResultTbl td{font-size:14px;border:2px solid #f3f3f3; padding:10px; }
+.visaResultTbl th b{font-size:14px; padding-right:5px; display:inline-block;}
+td.visatblTh1{background: #eaaa26;color: #0a144c;font-size: 16px;font-weight: 700;text-align: center;}
+td.visatblTh2{background: #0a144c;color: #fff;font-size: 16px;font-weight: 700;text-align: center;}
+td.visatblTh3{background: #eaaa26;color: #0a144c;font-size: 16px;font-weight: 700;text-align: center; padding:5px 10px;}
+.visatdprice{font-size:18px;}
+.visaDocReq{background-color:#eef1f9;box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.06);position:relative;padding: 15px 20px;}
+.visapin{position:absolute; right:0px; top: -15px;}
+.visaDocReq h2{float:left;margin: 0px;padding: 0px; font-size: 17px;}
+.visaDocReq p{float:left;border: 1px dashed #959595;padding: 10px 15px;border-radius: 10px;color: #061445;font-size: 14px;margin: 10px 0;}
+.visaDocReq h3{float:left;margin: 0px;padding: 0px 0 10px;width: 100%;font-size: 14px;}
+.visaNoResult{width: 500px; margin:40px auto;  background:#fff url(../images/visaloaderBg.jpg) no-repeat center center; border-radius: 25px; padding: 8px;  -webkit-box-shadow: 3.878px 6.997px 7px 0px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 3.878px 6.997px 7px 0px rgba(0, 0, 0, 0.17); border-radius: 25px; box-shadow: 3.878px 6.997px 7px 0px rgba(0, 0, 0, 0.17);}
+/*Pax Detail*/
+.vsBanerPanel{ background:url(../images/VisaSearchBg.jpg) no-repeat top center; background-size:cover;float: left; width: 100%; padding:10px 0;}
+.vsBanerPanel h1{ padding:10px 0 60px; font-size:25px; text-transform:uppercase; color:#fff; margin:0px;}
+.breadcrumb{ margin:-20px 0 0; padding:0px; text-align:center; width:100%;}
+.breadcrumb a{display:inline-block;padding: 5px 15px 5px 6px;margin: 0 5px;font-size: 15px;color:#000;text-decoration:none;border-radius: 30px;background-color:#ffffff;box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.06);}
+.breadcrumb a.active{ background:#edb133; font-weight:bold;}
+.breadcrumb b{display:inline-block;width: 30px;height: 30px;background:#efeff0;border-radius:100%;padding-top: 6px;font-size: 14px;text-align: center; margin-right:5px;}
+.breadcrumb a.active b{ background:#fff;}
+.travellerListPanel{ border:1px solid rgba(0, 0, 0, 0.06); background:#fff;}
+.travellerPanel{padding:20px;}
+.travellerListPanel h2{ float:left; width:100%; margin:0px; background:#004684; color:#fff; font-size:15px;padding:8px 12px;}
+.travellerList{float:left;width: auto;list-style-type:none;margin: 0px;padding:10px 5px;}
+.travellerList li{float:left;padding: 2px 4px 2px 2px;background: #fff;box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.06);border-radius:100px;color: #000;border: 1px solid #eaeaea;margin: 5px;}
+.travellerList dfn{display: inline-block;width: 30px; cursor:pointer; height: 30px;border-radius: 100%;vertical-align: middle;text-align: center;padding-top: 6px;font-size: 13px;color: #000;font-weight: bold;background: #d2d2d2;}
+.travellerList li.active dfn{background: #edb133;}
+.travellerList li.invalid dfn{background: #f10000; color:#fff;}
+.travellerList b{display: inline-block;padding-left: 5px;font-size: 13px;font-weight: 400;vertical-align: middle;}
+.travellerList em{font-style: normal;width: 16px;height: 16px;color: #004684;cursor:pointer;font-size: 17px;font-weight: bold;display: inline-block;margin-left: 2px;padding-top: 1px;text-align: center;vertical-align: middle;line-height: 15px;background: #fdfdfd;border-radius: 100%;box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.06);}
+.travellerList em:hover{ background:#edb133;}
+.addList{display:inline-block;width: 32px;vertical-align:middle;height: 32px;margin:0px;padding:0px;text-align:center;font-size: 28px;text-decoration: none;font-weight: bold;border-radius: 100%;background: #fff;margin-top: 17px;border: 1px solid #d0d0d0;line-height: 28px;color: #004684;box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.06);}
+.addList:hover{background: #edb133; border: 1px solid #edb133;}
+.travellerDtsPanel{ padding:0px; background:#fff; margin-top:10px;}
+.travellerHeading{ float:left; width:100%; margin:0px; background:#004684; color:#fff; font-size:15px;padding:10px;}
+.travellerHeading em{float:left;background: #edb133;color: #000;padding: 5px 6px;border-radius: 5px;font-size: 13px;font-weight: bold;}
+.travellerHeading b{float:left;margin-left: 10px;padding-top: 4px;}
+.travellerHeading small{float: right;margin-top: 6px;font-size: 11px;}
+.travellerInfoBox{ padding:15px; background:#f7f7f736;overflow: auto;}
+.travellerInfoBox h3{ margin:0px 0 10px 8px; padding:10px 0 5px 0; float:left;width: calc(100% - 16px);  margin-left: 8px; color:#061445; border-bottom:1px solid #bbbbbb;}
+.travellerInfoBox .ga{ padding:0 5px;}
+.selectopt_color {
+    color: #cdcdcd;
+}
+/* focus_effect */         
+/* Underline and Placeholder */
+.paxInputRow .inputFocus,.paxInputRow .inputFocus:focus {box-shadow: none;outline:none;height: 35px;padding:5px;}
+.paxInputRow .inputFocus{ width:100%; border: 1px solid #d9d9d9;}
+.paxInputRow select.inputFocus:focus{border: 1px solid #d9d9d9;}
+.inputFocus + label{display: block;position: relative;white-space: nowrap;padding: 0;margin: 0;width:100%;-webkit-transition: width 0.4s ease;transition: width 0.4s ease;height: 0px;cursor: text;}
+.inputFocus + label > code{ position: absolute; bottom: 0; content:""; left: 50%; width: 0; height: 2px; transition: 0.4s; border:0px; padding:0px;}
+.inputFocus:focus + label > code,.inputFocus.invalid + label > code{ width: 100%; transition: 0.4s; left: 0;}
+.inputFocus:focus + label > span/*,.inputFocus:valid + label > span*/ {top: -60px;font-size: 13px;}
+.inputFocus + label > span {margin: 0;position: absolute;font-size: 14px;top: -31px;left: 0px; font-weight: 300;-webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;}
+.inputFocus.validate + label > span,.inputFocus:focus:invalid + label > span{ top:-61px;}
+.paxInputRow{float:left; width:100%;position:relative; padding-top:10px; padding-bottom: 10px;}
+.paxInputRow .inputFocus + label > span{font-weight:normal;font-size:13px;padding-left:5px;top: -26px;left:5px;}
+.paxInputRow .inputFocus:focus + label > span,.paxInputRow  .inputFocus.validate + label > span,.paxInputRow  .inputFocus:focus:invalid + label > span{top:-50px; padding-left:0px; font-size:11px; left:0px;}
+.inputFocus.validate + label > span,.inputFocus:focus + label > span,.inputFocus:focus:invalid + label > code{font-size:11px;}
+textarea.inputFocus + label { position: absolute; top:55px;}
+select{ -moz-appearance: none; -webkit-appearance: none;background-image: linear-gradient(49deg, transparent 50%, black 50%), linear-gradient(135deg, black 50%, transparent 50%), linear-gradient(to right, #e1e1e1, #e1e1e1); background-position: calc(100% - 14px) calc(15px + 2px), calc(100% - 9px) calc(15px + 2px), 100% 0; background-size:8px 5px, 6px 5px, 30px 40px; background-repeat: no-repeat;}
+.paxInputRow .fa-calendar-alt{position: absolute; font-size: 20px; top: -27px; right: 6px; cursor: pointer;}
+/* focus_effect */         
+.input_row .inputFocus {  border-bottom:2px solid #f3f3f3;}
+/* Underline and Placeholder */
+.inputFocus + label > code,.inputFocus.validate + label > code{ background-color:#004684;}
+.inputFocus:focus + label > span, .inputFocus.validate + label > span,.inputFocus:invalid + label > span { color:#444444;}
+.inputFocus + label > span   {color: #cdcdcd;}
+.inputFocus:focus:invalid + label > span,.inputFocus.invalid + label > span { color:#f44336;}
+.inputFocus:invalid + label > code,.inputFocus.invalid + label > code { background-color:#f44336; width:0px;left: 50%;}
+.inputFocus:invalid:hover + label > code,.inputFocus.invalid:hover + label > code{width:100%;left:0%;}
+/*upload Doc*/
+.tblUploadDoc{ width:100%; border-collapse:collapse;}
+.tblUploadDoc tr th:nth-column(2n+1){ background:#eaaa26;}
+.tblUploadDoc td{ border:1px solid #ebebec;}
+/*Review page*/
+.travellerReviewPanel{ padding:0px 5px 15px;}
+.dtsrow {padding:8px 5px;float: left; width: 100%; font-size:13px; color: #636363;}
+.dtsrow label { float: left; width: 35%;}
+.dtsrow span{float: left; width: 65%; font-weight:600;}
+.dtsReviewPanel{ background: #f7f8f8;border: 1px solid #ddd; float:left; width:calc(100% - 16px); margin-left:8px; padding:8px 0;}
+.travellerReviewPanel h3 { margin: 0px; padding:13px 0 8px; float: left; width: calc(100% - 16px); margin-left: 8px; color: #061445; border-bottom: 1px solid #bbbbbb;}
+.travellerReviewPanel .visaResultTbl img{-webkit-transform: scale(1);border:2px solid #ddd; max-height:50px;transform: scale(1);-webkit-transition: .3s ease-in-out;transition: .3s ease-in-out;}
+.travellerReviewPanel .visaResultTbl img:hover {transform: scale(3); z-index:9;position: relative; border:2px solid #ddd;
+}
+/*Responsive css*/
+@media screen and (max-width:767px){
+  .vsStep li{ width:100%;}
+  .vsSrchPanel{ padding: 20px 0;}
+  .vsSrchPanel h1{ padding: 5px 0 20px;}
+  .visaResulgax{padding: 10px;}
+  .visaDocReq{ margin-top:15px;}
+  td.visatblTh1, td.visatblTh2{ font-size:14px;}
+  .visaResultTbl td{ padding:3px;}
+  .searchLoadingPopUp{width: 92%;padding: 30px 15px;}
+  .gad_banner_loader,.breadcrumb{display:none;}
+  .addList{float:right; margin: 5px;}
+  .travellerListPanel h2{    font-size: 13px;    padding: 6px 12px;}
+  .travellerHeading em{padding: 2px 3px;    font-size: 11px;}
+  .travellerPanel{padding: 10px;}
+  .paxInputRow .inputFocus + label > span{ overflow: hidden; width:100%;}
+  .searchLoadingPopUp fieldset{    padding: 20px 10px; border-radius:10px;}
+  .searchLoadingPopUp legend{    font-size: 16px;}
+  .visaNoResult{  width: 95%;}
+}

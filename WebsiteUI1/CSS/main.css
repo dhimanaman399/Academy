@@ -1,0 +1,35 @@
+.announcements_wrapper {
+    display: none;
+    background: #FFF;
+    margin-top: -4px
+}
+.announcement_title {
+    float: left;
+    width: 14%;
+    padding: 6px;
+    color: #FFF;
+    background: #33a1d9;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 6px 2px 0
+}
+.marquee_item {
+    float: left;
+    margin-right: 40px;
+    font-weight: 700;
+    font-size: 16px
+}
+.disclaimer{ 
+	background-color: rgba(255, 255, 255, 0.15);
+	width: 85.7%;
+    float: right;
+    margin-top: 0px;
+	padding:10px 0px 0px 0px; 
+	color:#F00; 
+	font-weight: inherit; 
+	text-align:center;
+}
+.disclaimer marquee h2 {
+    font-size: 15px!important;
+    color: #000CFF!important
+}

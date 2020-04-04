@@ -1,0 +1,425 @@
+* {
+  box-sizing: border-box;
+}
+.patb {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.patb20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+.relative {
+  position: relative;
+}
+.gafleft {
+  float: left;
+}
+.gafright {
+  float: right;
+}
+.galeft {
+  text-align: left;
+}
+.garight {
+  text-align: right;
+}
+.gacenter {
+  text-align: center;
+}
+.gacontainerfull {
+  width: 100%;
+  float: left;
+  margin: 0 auto;
+}
+.gacontainer {
+  width: 96%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.gafullwidth {
+  width: 100% !important;
+  float: left;
+}
+.garow {
+  width: 100%;
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.garowinner {
+  width: 100%;
+  float: left;
+}
+.ga {
+  float: left;
+  padding: 0 8px;
+}
+.resize_x {
+  resize: vertical;
+}
+.resize_y {
+  resize: horizontal;
+}
+.s1,
+.s2,
+.s3,
+.s4,
+.s5,
+.s6,
+.s7,
+.s8,
+.s9,
+.s10,
+.s11,
+.s12 {
+  display: none;
+}
+.m1,
+.m2,
+.m3,
+.m4,
+.m5,
+.m6,
+.m7,
+.m8,
+.m9,
+.m10,
+.m11,
+.m12 {
+  display: none;
+}
+.l1,
+.l2,
+.l3,
+.l4,
+.l5,
+.l6,
+.l7,
+.l8,
+.l9,
+.l10,
+.l11,
+.l12 {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .gacontainer {
+    width: 100%;
+  }
+  .s1,
+  .s2,
+  .s3,
+  .s4,
+  .s5,
+  .s6,
+  .s7,
+  .s8,
+  .s9,
+  .s10,
+  .s11,
+  .s12 {
+    display: block !important;
+  }
+  .m1,
+  .m2,
+  .m3,
+  .m4,
+  .m5,
+  .m6,
+  .m7,
+  .m8,
+  .m9,
+  .m10,
+  .m11,
+  .m12 {
+    display: none;
+  }
+  .l1,
+  .l2,
+  .l3,
+  .l4,
+  .l5,
+  .l6,
+  .l7,
+  .l8,
+  .l9,
+  .l10,
+  .l11,
+  .l12 {
+    display: none;
+  }
+  .s1 {
+    width: 8.333%;
+  }
+  .s2 {
+    width: 16.666%;
+  }
+  .s3 {
+    width: 25%;
+  }
+  .s4 {
+    width: 33.33%;
+  }
+  .s6 {
+    width: 50%;
+  }
+  .s12 {
+    width: 100%;
+  }
+  .s5 {
+    width: 41.66%;
+  }
+  .s7 {
+    width: 58.33%;
+  }
+  .s8 {
+    width: 66.66%;
+  }
+  .s9 {
+    width: 75%;
+  }
+  .s10 {
+    width: 83.33%;
+  }
+  .s11 {
+    width: 91.66%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .gacontainer {
+    width: 100%;
+  }
+  .s1,
+  .s2,
+  .s3,
+  .s4,
+  .s5,
+  .s6,
+  .s7,
+  .s8,
+  .s9,
+  .s10,
+  .s11,
+  .s12 {
+    display: none;
+  }
+  .m1,
+  .m2,
+  .m3,
+  .m4,
+  .m5,
+  .m6,
+  .m7,
+  .m8,
+  .m9,
+  .m10,
+  .m11,
+  .m12 {
+    display: block !important;
+  }
+  .l1,
+  .l2,
+  .l3,
+  .l4,
+  .l5,
+  .l6,
+  .l7,
+  .l8,
+  .l9,
+  .l10,
+  .l11,
+  .l12 {
+    display: none;
+  }
+  .m1 {
+    width: 8.333%;
+  }
+  .m2 {
+    width: 16.666%;
+  }
+  .m3 {
+    width: 25%;
+  }
+  .m4 {
+    width: 33.33%;
+  }
+  .m6 {
+    width: 50%;
+  }
+  .m12 {
+    width: 100%;
+  }
+  .m5 {
+    width: 41.66%;
+  }
+  .m7 {
+    width: 58.33%;
+  }
+  .m8 {
+    width: 66.66%;
+  }
+  .m9 {
+    width: 75%;
+  }
+  .m10 {
+    width: 83.33%;
+  }
+  .m11 {
+    width: 91.66%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .s1,
+  .s2,
+  .s3,
+  .s4,
+  .s5,
+  .s6,
+  .s7,
+  .s8,
+  .s9,
+  .s10,
+  .s11,
+  .s12 {
+    display: none;
+  }
+  .m1,
+  .m2,
+  .m3,
+  .m4,
+  .m5,
+  .m6,
+  .m7,
+  .m8,
+  .m9,
+  .m10,
+  .m11,
+  .m12 {
+    display: none;
+  }
+  .l1,
+  .l2,
+  .l3,
+  .l4,
+  .l5,
+  .l6,
+  .l7,
+  .l8,
+  .l9,
+  .l10,
+  .l11,
+  .l12 {
+    display: block !important;
+  }
+  .l1 {
+    width: 8.333%;
+  }
+  .l2 {
+    width: 16.666%;
+  }
+  .l3 {
+    width: 25%;
+  }
+  .l4 {
+    width: 33.33%;
+  }
+  .l6 {
+    width: 50%;
+  }
+  .l12 {
+    width: 100%;
+  }
+  .l5 {
+    width: 41.66%;
+  }
+  .l7 {
+    width: 58.33%;
+  }
+  .l8 {
+    width: 66.66%;
+  }
+  .l9 {
+    width: 75%;
+  }
+  .l10 {
+    width: 83.33%;
+  }
+  .l11 {
+    width: 91.66%;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1180px) {
+  .gacontainer {
+    width: 92%;
+  }
+}
+
+/*error sucess alert msg*/
+.gaerror,
+.gasuccess,
+.gaalert {
+  width: 100%;
+  float: left;
+  padding: 8px;
+  text-align: center;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  font-size: 12px;
+}
+.gaerror {
+  background: #fee4e4;
+  border: 2px solid #fecccc;
+  color: #e50000;
+}
+.gasuccess {
+  background: #ebfde9;
+  border: 2px solid #c2fcbb;
+  color: #179a05;
+}
+.gaalert {
+  background: #fff8e1;
+  border: 2px solid #fee89a;
+  color: #bf9504;
+}
+input[type="text"].invalid,
+textarea.invalid,
+select.invalid {
+  border: 1px solid #f00;
+}
+input[type="text"].valid:focus,
+textarea.valid:focus,
+select.valid:focus {
+  border: 1px solid #04a10b;
+}
+/*added by baliram*/
+.mar0 {
+  margin: 0px !important;
+}
+.pad0 {
+  padding: 0px !important;
+}
+.gaInput {
+  border: 1px solid #e0e0e0;
+  padding: 6px;
+  border-radius: 5px;
+  height: 35px;
+}
+.stickyTable th {
+  position: sticky;
+  top: 0px;
+}
+.overflowAuto {
+  overflow: auto;
+}

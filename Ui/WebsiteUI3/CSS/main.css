@@ -181,8 +181,9 @@ section.cm-testimonial-wrap>.card-group>.card {
 
 .headbalPanel {
   width: 60%;
+  width: 100%;
   height: 150px;
-  background: #eeee;
+  background: #fff;
   border-style: solid;
   border-radius: 12px;
   border-color: #f7a408;
@@ -205,6 +206,22 @@ section.cm-testimonial-wrap>.card-group>.card {
 .header-slides-item .header-slides-image {
   position: absolute;
 }
+
+.header-slides-item .header-slides-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-position: center;
+}
+
 .header-slider,.header-slider-inner {
   height: 100%;
 }
@@ -453,6 +470,31 @@ section.custom-section {
 .course-item-inner .course-item-body h3:hover {
   color: #000;
 }
+
+.course-item .products {
+  background: #fff;
+}
+
+.custom-section .course-item-inner .course-item-body {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.custom-section .course-item-inner {
+  height: 100%;
+  transition: 0.4s ease;
+}
+
+.custom-section .course-item-inner:hover {
+  /* background: #d8d8d8; */
+  border-radius: 4px;
+  transition: 0.4s ease;
+  box-shadow: 2px 2px 4px 1px #00000026;
+}
+
+.course-item {
+}
+
 
 div#toTop {
   position: fixed;

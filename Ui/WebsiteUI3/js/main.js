@@ -85,31 +85,69 @@ $(function () {
 
     });
 
-
-    $('.header-slides-wrap').slick({
-        slidesToShow: 3,
-      slidesToScroll: 1,
-      dots: true,
-      infinite: true,
-      speed: 500,
-      fade: true,
-      cssEase: 'linear',
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 15000,
-      slidesToShow: 1,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
+    $(document).ready(function () {
+        $('.header-slides-wrap').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
             arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 3
-          }
-        }
-      ]
+            autoplay: true,
+            autoplaySpeed: 15000,
+            slidesToShow: 1,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            }]
+        });
     });
+
+
+
+    $(document).ready(function () {
+        $('.top-col-body').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            infinite: true,
+            arrows: false,
+            dots: false,
+            responsive: [{
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        adaptiveHeight: true,
+                        infinite: true
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    });
+
+
+
+
 
 
 });

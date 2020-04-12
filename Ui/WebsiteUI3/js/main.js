@@ -92,10 +92,10 @@ $(function () {
             dots: true,
             infinite: true,
             speed: 500,
-            fade: true,
+            fade: false,
             cssEase: 'linear',
             arrows: false,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 15000,
             slidesToShow: 1,
             responsive: [{

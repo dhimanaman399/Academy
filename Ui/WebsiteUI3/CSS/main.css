@@ -1632,11 +1632,7 @@ flex-wrap: wrap; */
     padding-left: 15px;
     padding-right: 15px;
     overflow: hidden;
-  }
-
-  .home-right-section {
-    display: none;
-  }
+  } 
 
 }
 

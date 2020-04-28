@@ -29,6 +29,11 @@
 
 <body>
 
+    <!--#region Header-->
+    <%- include('layouts/header/header')%>
+    <!--#endregion-->
+
+    <!--#region Main Data-->
     <main>
         <section>
             <div class="container justify">
@@ -69,8 +74,19 @@
             </div>
         </section>
     </main>
+    <!--#endregion-->
 
-    
+    <!--#region Footer-->
+
+    <%- include('layouts/common/socialicons')%>
+
+    <%- include('layouts/footer/footer')%>
+
+    <%- include('layouts/common/chatBot')%>
+
+    <%- include('layouts/common/SelectedCandidatesBox')%>
+    <!--#endregion-->
+
 </body>
 
 </html>

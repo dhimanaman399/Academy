@@ -8,7 +8,7 @@ const app = express();
 app.use(express.urlencoded())
 
 app.use(express.static("public"));
-// require("./routers")(app);
+
 // Set EJS as templating engine
 app.set("view engine", "ejs");
 

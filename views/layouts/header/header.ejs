@@ -135,7 +135,8 @@
                 <li <%if(displayData && displayData.url == "/aboutUs") { %> class="active" <% } %>>
                     <a href="aboutUs">ABOUT US</a>
                 </li>
-                <li class="has-sub-nav">
+                <li
+                    class="has-sub-nav <%if(displayData && ( displayData.url == "/army-officers-entry" || displayData.url == "/army-soldier-entry") ) { %> active <% } %>">
                     <a>ARMY
 
                         <i class="fa fa-caret-right"></i>
@@ -144,15 +145,16 @@
                     <div class="gasubnav">
                         <ul>
                             <li>
-                                <a href="armyOfficersEntry.html" id="gaFlights_GroupBookingSearch">OFFICER ENTRY</a>
+                                <a href="army-officers-entry" id="gaFlights_GroupBookingSearch">OFFICER ENTRY</a>
                             </li>
                             <li>
-                                <a href="armySoldierEntry.html" id="gaFlights_GroupBookingSearch">SOLDIER ENTRY</a>
+                                <a href="army-soldier-entry" id="gaFlights_GroupBookingSearch">SOLDIER ENTRY</a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li class="has-sub-nav">
+                <li
+                    class="has-sub-nav <%if(displayData && ( displayData.url == "/navy-officers-entry" || displayData.url == "/navy-soldier-entry") ) { %> active <% } %>">
                     <a>NAVY
 
                         <i class="fa fa-caret-right"></i>
@@ -161,15 +163,16 @@
                     <div class="gasubnav">
                         <ul>
                             <li>
-                                <a href="navyOfficersEntry.html" id="gaFlights_GroupBookingSearch">OFFICER ENTRY</a>
+                                <a href="navy-officers-entry" id="gaFlights_GroupBookingSearch">OFFICER ENTRY</a>
                             </li>
                             <li>
-                                <a href="navySoldierEntry.html" id="gaFlights_GroupBookingSearch">SOLDIER ENTRY</a>
+                                <a href="navy-soldier-entry" id="gaFlights_GroupBookingSearch">SOLDIER ENTRY</a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li class="has-sub-nav">
+                <li
+                    class="has-sub-nav <%if(displayData && ( displayData.url == "/air-force-officers-entry" || displayData.url == "/air-force-soldier-entry") ) { %> active <% } %>">
                     <a>AIR FORCE
 
                         <i class="fa fa-caret-right"></i>
@@ -178,18 +181,19 @@
                     <div class="gasubnav">
                         <ul>
                             <li>
-                                <a href="airOfficersEntry.html" id="gaFlights_GroupBookingSearch">OFFICER ENTRY</a>
+                                <a href="air-force-officers-entry" id="gaFlights_GroupBookingSearch">OFFICER ENTRY</a>
                             </li>
                             <li>
-                                <a href="airOfficersEntry.html" id="gaFlights_GroupBookingSearch">SOLDIER ENTRY</a>
+                                <a href="air-force-soldier-entry" id="gaFlights_GroupBookingSearch">SOLDIER ENTRY</a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li>
-                    <a href="paramilitaryForce.html">PARAMILITARY</a>
+                <li <%if(displayData && displayData.url == "/paramilitary-force") { %> class="active" <% } %>>
+                    <a href="paramilitary-force">PARAMILITARY</a>
                 </li>
-                <li class="has-sub-nav">
+                <li
+                    class="has-sub-nav <%if(displayData && ( displayData.url == "/ssb-stage-1" || displayData.url == "/ssb-stage-2") ) { %> active <% } %>">
                     <a>SSB
 
                         <i class="fa fa-caret-right"></i>
@@ -198,10 +202,10 @@
                     <div class="gasubnav">
                         <ul>
                             <li>
-                                <a href="ssbStage1.html" id="gaFlights_GroupBookingSearch">STAGE-1</a>
+                                <a href="ssb-stage-1" id="gaFlights_GroupBookingSearch">STAGE-1</a>
                             </li>
                             <li>
-                                <a href="ssbStage2.html" id="gaFlights_GroupBookingSearch">STAGE-2</a>
+                                <a href="ssb-stage-2" id="gaFlights_GroupBookingSearch">STAGE-2</a>
                             </li>
                         </ul>
                     </div>
@@ -215,10 +219,10 @@
                     <div class="gasubnav">
                         <ul>
                             <li>
-                                <a href="previousPapersNda.html">NDA</a>
+                                <a href="ssb-stage-2">NDA</a>
                             </li>
                             <li>
-                                <a href="previousPapersCds.html">CDS</a>
+                                <a href="ssb-stage-2">CDS</a>
                             </li>
                         </ul>
                     </div>

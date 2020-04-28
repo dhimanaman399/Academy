@@ -1,18 +1,17 @@
-$(function() {
+$(function () {
   $("body").append(
     '<a id="back-to-top" href="#top"><i class="fa fa-arrow-up"></i></a>'
   );
   $("#back-to-top").hide();
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(window).scrollTop() > 100) {
       $("#back-to-top").fadeIn(500);
     } else {
       $("#back-to-top").fadeOut(500);
     }
   });
-  $("#back-to-top").click(function() {
-    $("body,html").animate(
-      {
+  $("#back-to-top").click(function () {
+    $("body,html").animate({
         scrollTop: 0
       },
       500
@@ -24,55 +23,46 @@ $(function() {
     '<div class="menu-trigger"><i class="fa fa-icon"></div>'
   );
 
-  $(".menuBar").click(function() {
+  $(".menuBar").click(function () {
     $("body").toggleClass("menu-actives");
+    return false;
   });
 
-  $(".menu-trigger").click(function() {
-    $(this)
-      .parent()
-      .siblings(".has-sub-nav")
-      .find(".child-trigger")
-      .removeClass("child-open");
-    $(this)
-      .parent()
-      .siblings(".has-sub-nav")
-      .find(".gasubnav")
-      .slideUp(250);
-    $(this)
-      .next(".gasubnav")
-      .slideToggle(250);
-    $(this)
-      .next(".gasubnav")
-      .children(".has-sub-nav")
-      .find(".gasubnav")
-      .slideUp(250);
-    $(this)
-      .next(".gasubnav")
-      .children(".has-sub-nav")
-      .find(".child-trigger")
-      .removeClass("child-open");
-    $(this)
-      .parent()
-      .siblings()
-      .removeClass("menu-open");
-    $(this)
-      .parent()
-      .toggleClass("child-open");
+  $(".menu-trigger").click(function () {
+    $(this).parent().siblings(".has-sub-nav").find(".child-trigger").removeClass("child-open");
+    $(this).parent().siblings(".has-sub-nav").find(".gasubnav").slideUp(250);
+    $(this).next(".gasubnav").slideToggle(250);
+    $(this).next(".gasubnav").children(".has-sub-nav").find(".gasubnav").slideUp(250);
+    $(this).next(".gasubnav").children(".has-sub-nav").find(".child-trigger").removeClass("child-open");
+    $(this).parent().siblings().removeClass("menu-open");
+    $(this).parent().toggleClass("menu-open");
     $(this).toggleClass("child-open");
     return false;
   });
 
-  $(document).ready(function() {
+  $(document).ready(function () {
     $("body").addClass("popup-show");
   });
 
-  $("button.popup-close").click(function() {
+  $("button.popup-close").click(function () {
     $("body").removeClass("popup-show");
   });
 
-  $(document).ready(function() {
-    $(".tabs li a").click(function() {
+
+  $("body").click(function () {
+    $(this).removeClass("popup-show");
+  });
+
+  $(".popup-body").click(function (e) {
+    e.stopPropagation();
+  });
+
+
+
+
+
+  $(document).ready(function () {
+    $(".tabs li a").click(function () {
       // Active state for tabs
       $(".tabs li a").removeClass("active");
       $(this).addClass("active");
@@ -87,8 +77,8 @@ $(function() {
     });
   });
 
-  $(document).ready(function() {
-    $("#myBtnContainer button").click(function() {
+  $(document).ready(function () {
+    $("#myBtnContainer button").click(function () {
       $("#myBtnContainer button").removeClass("activelink");
       $(this).addClass("activelink");
       var tagid = $(this).data("id");
@@ -101,8 +91,8 @@ $(function() {
     });
   });
 
-  $("div#myBtnContainer button").each(function() {
-    $("div#myBtnContainer button").click(function() {
+  $("div#myBtnContainer button").each(function () {
+    $("div#myBtnContainer button").click(function () {
       if ($(this).hasClass("active")) {
         $(this)
           .siblings()
@@ -111,7 +101,11 @@ $(function() {
     });
   });
 
-  $(document).ready(function() {
+
+
+
+
+  $(document).ready(function () {
     $(".header-slides-wrap").slick({
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -124,21 +118,19 @@ $(function() {
       autoplay: true,
       autoplaySpeed: 1500,
       slidesToShow: 1,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: "40px",
-            slidesToShow: 3
-          }
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: "40px",
+          slidesToShow: 3
         }
-      ]
+      }]
     });
   });
 
-  $(document).ready(function() {
+  $(document).ready(function () {
     $(".top-col-body").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -147,8 +139,7 @@ $(function() {
       infinite: true,
       arrows: false,
       dots: false,
-      responsive: [
-        {
+      responsive: [{
           breakpoint: 992,
           settings: {
             slidesToShow: 2,
@@ -171,4 +162,40 @@ $(function() {
       ]
     });
   });
+
+  $(document).ready(function () {
+    $('.gallery-body').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: false,
+      autoplay: true,
+      speed: 500,
+      infinite: true,
+      arrows: false,
+      dots: false,
+      responsive: [{
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true
+          }
+        },
+        {
+          breakpoint: 640,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: true,
+            infinite: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+  });
+
+
 });

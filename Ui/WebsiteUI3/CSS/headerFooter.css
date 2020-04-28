@@ -436,9 +436,10 @@ select {
     font-size: 26px;
     cursor: pointer;
     position: absolute;
-    top: 24px;
+    top: 50%;
     right: 10px;
     color: #2567a1;
+    transform: translateY(-50%);
 }
 
 .loguserMob,
@@ -454,6 +455,10 @@ select {
 .ganav>li .fa-plus,
 .ganav>li .fa-minus {
     display: none;
+}
+
+.ganav li {
+    margin: 0;
 }
 
 .close {
@@ -876,6 +881,11 @@ p.mobileIcon:before {
         display: none;
     }
 
+    a.galogo img {
+        max-width: 150px;
+        height: auto;
+    }
+
 }
 
 @media(max-width: 992px) {
@@ -922,8 +932,8 @@ p.mobileIcon:before {
     }
 
     .headpanelMobImg {
-        width: 80px;
-        height: 80px;
+        width: 150px;
+        height: auto;
     }
 
     .headprofile {

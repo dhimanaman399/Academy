@@ -5,7 +5,7 @@
         <div class="ga_top_header clearfix">
 
             <!--#region Logo Icon -->
-            <div class="ga l2 m2">
+            <div class="ga header-logo l2 m2">
                 <a href="index.html" class="galogo">
                     <img src="Assets/Icons/logo.jpg" alt="Georgians Academy" title="Georgians Academy">
                 </a>
@@ -13,8 +13,37 @@
             <!--#endregion-->
 
             <!--#region Display Data -->
-            <div class="gafright l10 m10 s12">
+            <div class="gafright header-right l10 m10 s12">
                 <!--#region Mobile Icon -->
+
+                <div class="m-header-conatct">
+
+                    <div class="header-conatct ">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <a href="mailto:Pratapkunwarbms@gmail.com">
+                            Pratapkunwarbms@gmail.com </a>
+
+
+                    </div>
+
+                    <div class="header-conatct ">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <a href="tel:7065502763">
+                            7065502763 </a>
+
+                    </div>
+                </div>
+
+                <div class="m-new-updates-text">
+                    <p>
+                        <span>New SSB Batch starts on every Monday.</span>
+                    </p>
+                    <p>
+                        <span>Written batches for CDS/NDA/AFCAT/TA/CAPF/SSC runs every
+                            month</span>
+                    </p>
+                </div>
+
                 <div class="headpanelMob">
                     <a href="index.html" class="menuBar">
                         <i class="fa fa-bars"></i>
@@ -87,7 +116,7 @@
                                     <div class="header-slides-item-inner">
                                         <div class="header-slides-content">
 
-                                            <div class="get-tuch-wrap ">
+                                            <div class="get-tuch-wrap col-md-3">
                                                 <div class="get-tuch ">
                                                     <h4>
                                                         NDA 2 2020 <br>
@@ -98,7 +127,34 @@
                                                 </div>
                                             </div>
 
-                                            <div class="get-tuch-wrap ">
+                                            <div class="header-slides-conatct col-md-3">
+                                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                                <p>
+                                                    <strong>Email Address
+                                                    </strong>
+
+                                                    <span>
+                                                        <a href="mailto:Pratapkunwarbms@gmail.com">Pratapkunwarbms@gmail.com
+                                                        </a>
+                                                    </span>
+                                                </p>
+
+                                            </div>
+
+                                            <div class="header-slides-conatct col-md-3 ">
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                                <p>
+                                                    <strong>Phone Number</strong>
+
+                                                    <span>
+                                                        <a href="tel:7065502763">
+                                                            7065502763 </a>
+                                                    </span>
+                                                </p>
+
+                                            </div>
+
+                                            <div class="get-tuch-wrap col-md-3 ">
                                                 <div class="get-tuch ">
                                                     <h4>
                                                         CDS 2 2020 <br>
@@ -125,6 +181,7 @@
 
         </div>
         <!--#endregion-->
+
 
         <!--#region Drop down header -->
         <nav class="ganavPanel">
@@ -294,7 +351,8 @@
                         </ul>
                     </div>
                 </li>
-                <li class="has-sub-nav">
+                <li
+                    class="has-sub-nav <%if(displayData && ( displayData.url == "/selectedcandidatesgallery" || displayData.url == "/activitygallery" || displayData.url == "/seminargallery") ) { %> active <% } %>">
                     <a>GALLERY
 
                         <i class="fa fa-caret-right"></i>
@@ -303,14 +361,14 @@
                     <div class="gasubnav">
                         <ul>
                             <li>
-                                <a href="selectedCandidatesGallery.html" id="gaFlights_GroupBookingSearch">Selected
+                                <a href="selectedcandidatesgallery" id="gaFlights_GroupBookingSearch">Selected
                                     Candidates</a>
                             </li>
                             <li>
-                                <a href="activityGallery.html" id="gaFlights_GroupBookingSearch">Activity</a>
+                                <a href="activitygallery" id="gaFlights_GroupBookingSearch">Activity</a>
                             </li>
                             <li>
-                                <a href="seminarGallery.html" id="gaFlights_GroupBookingSearch">Seminar</a>
+                                <a href="seminargallery" id="gaFlights_GroupBookingSearch">Seminar</a>
                             </li>
                         </ul>
                     </div>

@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { DB_URL } = require("../config")
+const { DB_URL } = require("../config")  
 mongoose.connect(DB_URL, (err)=>{
     if (err) {
         console.log(err);

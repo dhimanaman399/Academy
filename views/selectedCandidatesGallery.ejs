@@ -97,6 +97,9 @@
 </head>
 
 <body>
+    <!--#region Header-->
+    <%- include('layouts/header/header')%>
+    <!--#endregion-->
 
     <!--#region Main Page Display-->
     <main>
@@ -104,86 +107,37 @@
             <div class="container">
                 <div class="main">
                     <div id="myBtnContainer">
-                        <button class="btn active" id="2020" onclick="filterSelection('2020')"> 2020</button>
-                        <button class="btn" id="2019" onclick="filterSelection('2019')"> 2019</button>
+                        <%if(displayData && displayData.yearsList){
+                            displayData.yearsList.forEach((ele , index) => {
+                            %>
+                        <button class="btn <%if(index == 0){%>active<%}%>" id="<%=ele%>"
+                            onclick="filterSelection('<%=ele%>')"><%=ele%></button>
+                        <%})
+                    }%>
                     </div>
                     <!-- Portfolio Gallery Grid -->
                     <div class="row">
-                        <div class="filterDiv column  2020">
+
+                        <%if(displayData && displayData.datalist){
+                        displayData.datalist.forEach((ele) => {%>
+                        <div class="filterDiv column  <%=ele[0]%>">
                             <div class="content">
                                 <a class="fancybox" data-fancybox="images" rel="group"
-                                    href="Assets/Images/gallery/recommendation/2020/abhay-thakur.jpg">
+                                    href="Assets/Images/gallery/recommendation/<%=ele[0]%>/<%=ele[6]%>">
                                     <div class="filterDiv-img-wrap"
-                                        style="background-image: url(Assets/Images/gallery/recommendation/2020/abhay-thakur.jpg)">
-                                        <img src="Assets/Images/gallery/recommendation/2020/abhay-thakur.jpg" alt=""
+                                        style="background-image: url(Assets/Images/gallery/recommendation/<%=ele[0]%>/<%=ele[6]%>)">
+                                        <img src="Assets/Images/gallery/recommendation/<%=ele[0]%>/<%=ele[6]%>" alt=""
                                             style="width:100%">
                                     </div>
                                 </a>
-                                
-                                    <div class="filterDiv-info">
-                                        <h4>abhay thakur</h4>
-                                    <p></p>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="filterDiv column  2020">
-                            <div class="content">
-                                <a class="fancybox" data-fancybox="images" rel="group"
-                                    href="Assets/Images/gallery/recommendation/2020/abhishek.jpg">
-
-                                    <div class="filterDiv-img-wrap"
-                                        style="background-image: url(Assets/Images/gallery/recommendation/2020/abhishek.jpg)">
-                                        <img src="Assets/Images/gallery/recommendation/2020/abhishek.jpg" alt=""
-                                            style="width:100%">
-                                    </div>
-
-                                </a>
-                                
                                 <div class="filterDiv-info">
-                                    <h4>Abhishek</h4>
-                                    <p></p>
+                                    <h4><%=ele[1]%></h4>
+                                    <p><%=ele[4]%></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="filterDiv column  2020">
-                            <div class="content">
-                                <a class="fancybox" data-fancybox="images" rel="group"
-                                    href="Assets/Images/gallery/recommendation/2020/akash-kaler.JPG">
-
-                                    <div class="filterDiv-img-wrap"
-                                        style="background-image: url(Assets/Images/gallery/recommendation/2020/akash-kaler.jpg)">
-                                        <img src="Assets/Images/gallery/recommendation/2020/akash-kaler.jpg" alt=""
-                                            style="width:100%">
-                                    </div>
-
-                                </a>
-                                
-                                <div class="filterDiv-info">
-                                    <h4>akash kaler</h4>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="filterDiv column  2020">
-                            <div class="content">
-                                <a class="fancybox" data-fancybox="images" rel="group"
-                                    href="Assets/Images/gallery/recommendation/2020/ankush-thakur.jpg">
-                                    <div class="filterDiv-img-wrap"
-                                        style="background-image: url(Assets/Images/gallery/recommendation/2020/ankush-thakur.jpg)">
-                                        <img src="Assets/Images/gallery/recommendation/2020/ankush-thakur.jpg" alt=""
-                                            style="width:100%">
-                                    </div>
-
-
-                                </a>
-                                
-                                <div class="filterDiv-info">
-                                    <h4>ankush thakur</h4>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                        
+                        <%})
+                    }%>
                         <!-- END GRID -->
                     </div>
                     <!-- END MAIN -->
@@ -193,7 +147,19 @@
     </main>
     <!--#endregion-->
 
-    
+    <!--#region Footer-->
+
+    <%- include('layouts/common/socialicons')%>
+
+    <%- include('layouts/common/map')%>
+
+    <%- include('layouts/footer/footer')%>
+
+    <%- include('layouts/common/chatBot')%>
+
+    <%- include('layouts/common/SelectedCandidatesBox')%>
+    <!--#endregion-->
+
     <!--#region Script  -->
     <script>
         filterSelection("all")

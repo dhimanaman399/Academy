@@ -115,7 +115,7 @@ $(function () {
       fade: false,
       cssEase: "linear",
       arrows: false,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 1500,
       slidesToShow: 1,
       responsive: [{

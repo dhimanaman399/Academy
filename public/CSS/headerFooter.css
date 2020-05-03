@@ -494,8 +494,6 @@ select {
     width: 100%;
 }
 
-.slide-info-txt {}
-
 .slide-info {
     position: relative;
 }
@@ -596,9 +594,6 @@ select {
     background-image: url(../Assets/Images/ssbSelection/icone-new.gif);
 }
 
-.header-slides-item.new-updates .header-slides-content {
-}
-
 .new-updates .header-slides-content p span {
     color: #007bff;
     font-style: italic;
@@ -674,10 +669,6 @@ main.gafullwidth {
 .footer-address-wrap {
     font-size: 14px;
 }
-
-.menu-footer-menu-container {}
-
-.menu-footer-menu-container {}
 
 .menu-footer-menu-container ul#menu-footer-menu {
     padding: 0;
@@ -897,8 +888,7 @@ p.mobileIcon:before {
         margin-top: 50px;
     }
 
-    .footer-address-wrap {}
-
+   
     .footer-top .col-sm-5 {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;

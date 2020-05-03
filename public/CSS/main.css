@@ -1638,6 +1638,66 @@ a.fuse_social_icons_links img {
   color: #fff;
 }
 
+
+.cm-tables tr.info th {
+  color: #fff;
+  background: #254a8c;
+}
+
+.nots-list {
+  margin-top: 30px;
+}
+
+.nots-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: inside;
+  font-size: 15px;
+}
+
+.table-wrap {
+  margin-bottom: 30px;
+}
+
+.table-wrap h4.table-title {
+  margin-top: 0 !important;
+  font-family: 'Open Sans', sans-serif !important;
+  margin-bottom: 10px !important;
+}
+
+
+tbody>tr:first-child td:first-child {
+  border-top: 0;
+}
+
+.cm-tables thead tr>th {
+  border-bottom: 0;
+}
+
+.table-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.table-item {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+}
+
+.table-wrap h5 {
+  margin-top: 0 !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  margin-bottom: 10px !important;
+  color: #254a8c !IMPORTANT;
+}
+
+.block-SecondContent a {
+  text-decoration: none !important;
+}
+
 /*====== desktop endss ===========*/
 
 /*======== Media Queries =========*/
@@ -1940,6 +2000,16 @@ flex-wrap: wrap; */
     margin-right: 0;
   }
 
+  .table-wrap {
+    overflow-y: auto;
+  }
+
+  .table-row {
+    flex-wrap: wrap;
+  }
+
+
+
   /*======= Gallery Page ========*/
 
   /*======== 767 endss ===========*/
@@ -1963,7 +2033,7 @@ flex-wrap: wrap; */
 
   .m-new-updates-text {
     display: none;
-}
+  }
 
 }
 

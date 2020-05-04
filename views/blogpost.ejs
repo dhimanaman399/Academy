@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=2.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Georgians Academy Specializes in coaching for Defence. Best SSB Coaching in Delhi</title>
+    <link href="/css/headerFooter.css?ver=02012020" type="text/css" rel="Stylesheet" />
+    <link href="/css/grid.css?ver=02012020" type="text/css" rel="Stylesheet" />
+    <link href="/css/main.css?ver=01022020" type="text/css" rel="Stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/blog.css">
+    <script src="/js/main.js"></script>
+    <script src="/js/static.js"></script>
+    <link rel="stylesheet" href="/CSS/slick.css">
+    <link rel="stylesheet" href="/CSS/slick-theme.css">
+    <script src="/js/main.js"></script>
+    <script src="/js/static.js"></script>
+</head>
+
+<body class="blog blog-post-lay">
+
+    <!--#region Header-->
+    <%- include('layouts/header/header')%>
+    <!--#endregion-->
+
+    <main>
+
+        <section>
+            <div class="container">
+                <div class="blog-content-wrapper">
+                    <div class="row-fluid clearfix">
+                        <div class="blog-content-left cm-col s12 m8 l8">
+                            <div class="blog-post-content-wrap">
+                                <div class="blog-post-content">
+                                    <div class="section post-header">
+                                        <div class="post-byline">
+                                            <h2>
+                                                <a>
+                                                    <%=displayData.blogdata.title%>
+                                                </a>
+                                            </h2>
+                                            <p class="post-date">
+                                                <i class="fa fa-clock-o "></i> <%=displayData.blogdata.data%>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="section post-body">
+                                        <div class="blog-content" >
+                                            <%- include(`components/blog/blog${displayData.blogdata.no}`)%>
+        </div>
+        </div>
+        </div>
+
+
+        <!-- <div class="blog-post-pagination">
+                                    <ul>
+                                        <li class="prev-post">
+                                            <a href="">
+                                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                                Older Post
+                                            </a>
+                                        </li>
+                                        <li class="next-post">
+                                            <a href="">
+                                                Newer Post
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div> -->
+
+
+        </div>
+
+        <div class="related-posts-wrapp">
+
+            <div class="rel-posts">
+                <div class="sidebarHeaderTitle">
+                    <h3>Recent post</h3>
+                </div>
+                <div class="rel-posts-wrap">
+                    <div class="rel-posts-item">
+                        <div class="rel-posts-image">
+                            <img src="file:///D:/Sandeep/Academy/Ui/WebsiteUI2/Images/img-1.jpg" alt="Harsh">
+                        </div>
+                        <div class="rel-posts-title">
+                            <h4>
+                                <a href="http://www.georgiansacademy.in/my-story-harsh-sheoran/">
+                                    MY STORY- HARSH SHEORAN
+                                </a>
+                            </h4>
+                            <p class="rel-post-date">
+                                October 14, 2019
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="rel-posts-item">
+                        <div class="rel-posts-image">
+                            <img src="file:///D:/Sandeep/Academy/Ui/WebsiteUI2/Images/img-1.jpg" alt="Harsh">
+                        </div>
+                        <div class="rel-posts-title">
+                            <h4>
+                                <a href="http://www.georgiansacademy.in/my-story-harsh-sheoran/">
+                                    MY STORY- HARSH SHEORAN
+                                </a>
+                            </h4>
+                            <p class="rel-post-date">
+                                October 14, 2019
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="rel-posts-item">
+                        <div class="rel-posts-image">
+                            <img src="file:///D:/Sandeep/Academy/Ui/WebsiteUI2/Images/img-1.jpg" alt="Harsh">
+                        </div>
+                        <div class="rel-posts-title">
+                            <h4>
+                                <a href="http://www.georgiansacademy.in/my-story-harsh-sheoran/">
+                                    MY STORY- HARSH SHEORAN
+                                </a>
+                            </h4>
+                            <p class="rel-post-date">
+                                October 14, 2019
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="rel-posts-item">
+                        <div class="rel-posts-image">
+                            <img src="file:///D:/Sandeep/Academy/Ui/WebsiteUI2/Images/img-1.jpg" alt="Harsh">
+                        </div>
+                        <div class="rel-posts-title">
+                            <h4>
+                                <a href="http://www.georgiansacademy.in/my-story-harsh-sheoran/">
+                                    MY STORY- HARSH SHEORAN
+                                </a>
+                            </h4>
+                            <p class="rel-post-date">
+                                October 14, 2019
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+        <!--#region Ads-->
+        <%- include('layouts/ads/blogads')%>
+        <!--#endregion-->
+
+        </div>
+
+        </div>
+        </div>
+        </section>
+
+    </main>
+    <!--#region Footer-->
+    <%- include('layouts/common/socialicons')%>
+
+    <%- include('layouts/footer/footer')%>
+
+    <%- include('layouts/common/chatBot')%>
+
+    <%- include('layouts/common/SelectedCandidatesBox')%>
+    <!--#endregion-->
+</body>
+
+</html>

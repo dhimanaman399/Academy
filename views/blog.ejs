@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=2.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Georgians Academy Specializes in coaching for Defence. Best SSB Coaching in Delhi</title>
-    <link href="css/headerFooter.css?ver=02012020" type="text/css" rel="Stylesheet" />
-    <link href="css/grid.css?ver=02012020" type="text/css" rel="Stylesheet" />
-    <link href="css/main.css?ver=01022020" type="text/css" rel="Stylesheet" />
+    <link href="/css/headerFooter.css?ver=02012020" type="text/css" rel="Stylesheet" />
+    <link href="/css/grid.css?ver=02012020" type="text/css" rel="Stylesheet" />
+    <link href="/css/main.css?ver=01022020" type="text/css" rel="Stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/blog.css">
-    <script src="js/main.js"></script>
-    <script src="js/static.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/blog.css">
+    <script src="/js/main.js"></script>
+    <script src="/js/static.js"></script>
 
-    <link rel="stylesheet" href="CSS/slick.css">
-    <link rel="stylesheet" href="CSS/slick-theme.css">
-    <script src="js/main.js"></script>
-    <script src="js/static.js"></script>
+    <link rel="stylesheet" href="/CSS/slick.css">
+    <link rel="stylesheet" href="/CSS/slick-theme.css">
+    <script src="/js/main.js"></script>
+    <script src="/js/static.js"></script>
 
 </head>
 
@@ -39,101 +39,88 @@
                         <div class="blog-content-left cm-col s12 m8 l8">
                             <div class="post-listing">
                                 <!--#region Post List -->
+
+                                <%if(displayData && displayData.bloglist){
+                                    displayData.bloglist.forEach((ele)=>{  %>
                                 <div class="post-item">
                                     <div class="post-item-inner">
+                                        <%if(ele[3]){%>
+                                        <div class="post-header">
+                                            <a href="<%=displayData.preUrl%>blog/?no=<%=ele[0]%>">
+                                                <img src="<%=displayData.preUrl%>Assets/Images/blog/<%=ele[3]%>" alt="">
+                                            </a>
+                                        </div>
+                                        <%}%>
                                         <div class="post-body">
                                             <div class="post-byline">
                                                 <h2>
-                                                    <a href="http://www.georgiansacademy.in/my-story-harsh-sheoran/">
-                                                        MY STORY- HARSH SHEORAN 
-                                                    </a>
-                                                </h2>
-                                                <p class="post-date">
-                                                    <i class="fa fa-clock-o "></i> October 1, 2019
-                                                </p>
-                                            </div>
-                                            <div class="post-text" style="text-align: justify;">
-                                                “Some Goals Are So Worthy. It’s glorious even to fail”. These Golden
-                                                lines by Captain Manoj Kumar Pandey Always kept me going. I am Sahil
-                                                Datt, currently a GC at OTA Chennai. Coming from a civilian background
-                                                but having picked up interest in Army as a child, I gave my NDA exam
-                                                thrice but couldn’t …
-                                            </div>
-                                            <div class="more-link-wrap">
-                                                <a href="http://www.georgiansacademy.in/my-story-harsh-sheoran/">
-                                                    Read More
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="post-header">
-                                            <a href="http://www.georgiansacademy.in/my-story-harsh-sheoran/">
-                                                <img src="Assets/Images/blog/2.png"
-                                                    alt="">
-                                            </a>
-                                        </div>
+                                                    <a href="<%=displayData.preUrl%>blog/?no=<%=ele[0]%>">
+                                        <%=ele[1]%>
+                                        </a>
+                                        </h2>
+                                        <p class="post-date">
+                                            <i class="fa fa-clock-o "></i><%=ele[2]%>
+                                        </p>
+                                    </div>
+                                    <div class="post-text">
+                                        <%=ele[0]%> <%=ele[4]%>
+                                    </div>
+                                    <div class="more-link-wrap">
+                                        <a href="<%=displayData.preUrl%>blog/?no=<%=ele[0]%>">
+                                            Read More
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="post-item">
-                                    <div class="post-item-inner">
-                                        <div class="post-header">
-                                            <a href="http://www.georgiansacademy.in/my-story-harsh-sheoran/">
-                                                <img src="Assets/Images/blog/1.png"
-                                                    alt="">
-                                            </a>
-                                        </div>
-                                        <div class="post-body">
-                                            <div class="post-byline">
-                                                <h2>
-                                                    <a href="http://www.georgiansacademy.in/my-story-harsh-sheoran/">
-                                                        MY STORY- HARSH SHEORAN
-                                                    </a>
-                                                </h2>
-                                                <p class="post-date">
-                                                    <i class="fa fa-clock-o "></i> October 1, 2019
-                                                </p>
-                                            </div>
-                                            <div class="post-text">
-                                                “Some Goals Are So Worthy. It’s glorious even to fail”. These Golden
-                                                lines by Captain Manoj Kumar Pandey Always kept me going. I am Sahil
-                                                Datt, currently a GC at OTA Chennai. Coming from a civilian background
-                                                but having picked up interest in Army as a child, I gave my NDA exam
-                                                thrice but couldn’t …
-                                            </div>
-                                            <div class="more-link-wrap">
-                                                <a href="http://www.georgiansacademy.in/my-story-harsh-sheoran/">
-                                                    Read More
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                 <!--#endregion-->
                             </div>
-                           <!--#region Pagination-->
-                            <div class="blog-pagination">
-                                <ul>
-                                    <li class="page-btn prev-page disabled">
-                                        <a href="">
-                                            <i class="fa fa-angle-left" aria-hidden="true"></i>
-                                            Prev
+                        </div>
+                        <%});
+                            }%>
+                        <!--#endregion-->
+                    </div>
+                    <!--#region Pagination-->
+                    <div class="blog-pagination">
+                        <ul>
+                            <%if(displayData && displayData.paginationUrl && displayData.paginationUrl.pre ){%>
+                            <li class="page-btn prev-page">
+                                <a href="<%=displayData.paginationUrl.pre%>">
+                                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                    Prev
+                                </a>
+                            </li>
+                            <%}
+                                    else{%>
+                            <li class="page-btn prev-page  disabled">
+                                <a href="">
+                                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                    Prev
+                                </a>
+                            </li>
+                            <%}%>
+
+                            <%displayData.paginationUrl.url.forEach((ele)=>{%>
+                                    <li <%if(displayData.paginationUrl.active == ele){%>class="active"<%}%>>
+                                        <a href="/blog/?pageNo=<%=ele%>">
+                                            <%=ele%>
                                         </a>
                                     </li>
-                                    <li class="active">
-                                        <a href="">
-                                            1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            2
-                                        </a>
-                                    </li>
+                            <%});%>
+
+                                    <%if(displayData && displayData.paginationUrl && displayData.paginationUrl.next ){%>
                                     <li class="page-btn next-page">
-                                        <a href="">
+                                        <a href="/blog/?pageNo=<%=displayData.paginationUrl.next%>">
                                             Next
                                             <i class="fa fa-angle-right" aria-hidden="true"></i>
                                         </a>
                                     </li>
+                                    <%}
+                                    else{%>
+                                        <li class="page-btn next-page disabled">
+                                            <a href="">
+                                                Next
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                     <%}%>   
                                 </ul>
                             </div>
                              <!--#endregion-->
@@ -141,7 +128,7 @@
 
                         <!--#region Ads-->
                         <%- include('layouts/ads/blogads')%>
-                        <!--#endregion-->
+                            <!--#endregion-->
 
                     </div>
                 </div>

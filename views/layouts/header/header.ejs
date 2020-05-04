@@ -6,8 +6,8 @@
 
             <!--#region Logo Icon -->
             <div class="ga header-logo l2 m2">
-                <a href="index.html" class="galogo">
-                    <img src="Assets/Icons/logo.jpg" alt="Georgians Academy" title="Georgians Academy">
+                <a href="/" class="galogo">
+                    <img src="<%=displayData.preUrl%>Assets/Icons/logo.jpg" alt="Georgians Academy" title="Georgians Academy">
                 </a>
             </div>
             <!--#endregion-->
@@ -45,11 +45,11 @@
                 </div>
 
                 <div class="headpanelMob">
-                    <a href="index.html" class="menuBar">
+                    <a href="/" class="menuBar">
                         <i class="fa fa-bars"></i>
                     </a>
-                    <a href="index.html">
-                        <img class="headpanelMobImg" src="Assets/Icons/logo.jpg" alt="Georgians Academy"
+                    <a href="/">
+                        <img class="headpanelMobImg" src="<%=displayData.preUrl%>Assets/Icons/logo.jpg" alt="Georgians Academy"
                             title="Georgians Academy">
                     </a>
                 </div>
@@ -67,9 +67,9 @@
                                         <div class="header-slides-image">
 
                                             <div class="slide-info"
-                                                style="background-image: url(Assets/Images/ssbSelection/sparsh.jpg);">
+                                                style="background-image: url(<%=displayData.preUrl%>Assets/Images/ssbSelection/sparsh.jpg);">
                                                 <div class="slide-info-img">
-                                                    <img src="Assets/Images/ssbSelection/sparsh.jpg">
+                                                    <img src="<%=displayData.preUrl%>Assets/Images/ssbSelection/sparsh.jpg">
                                                 </div>
                                                 <div class="slide-info-txt info-txt">
                                                     <h4> SPARSH KANKANE</h4>
@@ -79,9 +79,9 @@
                                             </div>
 
                                             <div class="slide-info"
-                                                style="background-image: url(Assets/Images/ssbSelection/sidharth.jpg);">
+                                                style="background-image: url(<%=displayData.preUrl%>Assets/Images/ssbSelection/sidharth.jpg);">
                                                 <div class="slide-info-img">
-                                                    <img src="Assets/Images/ssbSelection/sidharth.jpg">
+                                                    <img src="<%=displayData.preUrl%>Assets/Images/ssbSelection/sidharth.jpg">
                                                 </div>
                                                 <div class="slide-info-txt info-txt">
                                                     <h4> SIDDHARTH BHARTI</h4>
@@ -119,9 +119,9 @@
                                             <div class="get-tuch-wrap col-md-3">
                                                 <div class="get-tuch ">
                                                     <h4>
-                                                        NDA 2 2020 <br>
+                                                        NDA <br>
                                                         ADMISSIONS OPEN <br>
-                                                        <a href="" class="register-btn" tabindex="0"> Register Now
+                                                        <a href="<%=displayData.preUrl%>" class="register-btn" tabindex="0"> Register Now
                                                         </a>
                                                     </h4>
                                                 </div>
@@ -157,9 +157,9 @@
                                             <div class="get-tuch-wrap col-md-3 ">
                                                 <div class="get-tuch ">
                                                     <h4>
-                                                        CDS 2 2020 <br>
+                                                        CDS <br>
                                                         ADMISSIONS OPEN <br>
-                                                        <a href="" class="register-btn" tabindex="0"> Register Now
+                                                        <a href="<%=displayData.preUrl%>" class="register-btn" tabindex="0"> Register Now
                                                         </a>
                                                     </h4>
                                                 </div>
@@ -190,7 +190,7 @@
                     <a href="/">Home</a>
                 </li>
                 <li <%if(displayData && displayData.url == "/aboutUs") { %> class="active" <% } %>>
-                    <a href="aboutUs">ABOUT US</a>
+                    <a href="<%=displayData.preUrl%>aboutUs">ABOUT US</a>
                 </li>
                 <li
                     class="has-sub-nav <%if(displayData && ( displayData.url == "/army-officers-entry" || displayData.url == "/army-soldier-entry") ) { %> active <% } %>">
@@ -202,10 +202,10 @@
                     <div class="gasubnav">
                         <ul>
                             <li>
-                                <a href="army-officers-entry" id="gaFlights_GroupBookingSearch">OFFICER ENTRY</a>
+                                <a href="<%=displayData.preUrl%>army-officers-entry" id="gaFlights_GroupBookingSearch">OFFICER ENTRY</a>
                             </li>
                             <li>
-                                <a href="army-soldier-entry" id="gaFlights_GroupBookingSearch">SOLDIER ENTRY</a>
+                                <a href="<%=displayData.preUrl%>army-soldier-entry" id="gaFlights_GroupBookingSearch">SOLDIER ENTRY</a>
                             </li>
                         </ul>
                     </div>
@@ -220,10 +220,10 @@
                     <div class="gasubnav">
                         <ul>
                             <li>
-                                <a href="navy-officers-entry" id="gaFlights_GroupBookingSearch">OFFICER ENTRY</a>
+                                <a href="<%=displayData.preUrl%>navy-officers-entry" id="gaFlights_GroupBookingSearch">OFFICER ENTRY</a>
                             </li>
                             <li>
-                                <a href="navy-soldier-entry" id="gaFlights_GroupBookingSearch">SOLDIER ENTRY</a>
+                                <a href="<%=displayData.preUrl%>navy-soldier-entry" id="gaFlights_GroupBookingSearch">SOLDIER ENTRY</a>
                             </li>
                         </ul>
                     </div>
@@ -238,16 +238,16 @@
                     <div class="gasubnav">
                         <ul>
                             <li>
-                                <a href="air-force-officers-entry" id="gaFlights_GroupBookingSearch">OFFICER ENTRY</a>
+                                <a href="<%=displayData.preUrl%>air-force-officers-entry" id="gaFlights_GroupBookingSearch">OFFICER ENTRY</a>
                             </li>
                             <li>
-                                <a href="air-force-soldier-entry" id="gaFlights_GroupBookingSearch">SOLDIER ENTRY</a>
+                                <a href="<%=displayData.preUrl%>air-force-soldier-entry" id="gaFlights_GroupBookingSearch">SOLDIER ENTRY</a>
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li <%if(displayData && displayData.url == "/paramilitary-force") { %> class="active" <% } %>>
-                    <a href="paramilitary-force">PARAMILITARY</a>
+                    <a href="<%=displayData.preUrl%>paramilitary-force">PARAMILITARY</a>
                 </li>
                 <li
                     class="has-sub-nav <%if(displayData && ( displayData.url == "/ssb-stage-1" || displayData.url == "/ssb-stage-2") ) { %> active <% } %>">
@@ -259,10 +259,10 @@
                     <div class="gasubnav">
                         <ul>
                             <li>
-                                <a href="ssb-stage-1" id="gaFlights_GroupBookingSearch">STAGE-1</a>
+                                <a href="<%=displayData.preUrl%>ssb-stage-1" id="gaFlights_GroupBookingSearch">STAGE-1</a>
                             </li>
                             <li>
-                                <a href="ssb-stage-2" id="gaFlights_GroupBookingSearch">STAGE-2</a>
+                                <a href="<%=displayData.preUrl%>ssb-stage-2" id="gaFlights_GroupBookingSearch">STAGE-2</a>
                             </li>
                         </ul>
                     </div>
@@ -276,10 +276,10 @@
                     <div class="gasubnav">
                         <ul>
                             <li>
-                                <a href="ssb-stage-2">NDA</a>
+                                <a href="<%=displayData.preUrl%>ssb-stage-2">NDA</a>
                             </li>
                             <li>
-                                <a href="ssb-stage-2">CDS</a>
+                                <a href="<%=displayData.preUrl%>ssb-stage-2">CDS</a>
                             </li>
                         </ul>
                     </div>
@@ -331,7 +331,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="http://www.georgiansacademy.in/success-stories/">Success Stories</a>
+                    <a href="">Success Stories</a>
                 </li>
                 <li class="has-sub-nav">
                     <a href="http://www.georgiansacademy.in/news-room/">News
@@ -361,20 +361,20 @@
                     <div class="gasubnav">
                         <ul>
                             <li>
-                                <a href="selectedcandidatesgallery" id="gaFlights_GroupBookingSearch">Selected
+                                <a href="<%=displayData.preUrl%>selectedcandidatesgallery" id="gaFlights_GroupBookingSearch">Selected
                                     Candidates</a>
                             </li>
                             <li>
-                                <a href="activitygallery" id="gaFlights_GroupBookingSearch">Activity</a>
+                                <a href="<%=displayData.preUrl%>activitygallery" id="gaFlights_GroupBookingSearch">Activity</a>
                             </li>
                             <li>
-                                <a href="seminargallery" id="gaFlights_GroupBookingSearch">Seminar</a>
+                                <a href="<%=displayData.preUrl%>seminargallery" id="gaFlights_GroupBookingSearch">Seminar</a>
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a href="http://www.georgiansacademy.in/blog/">Blog</a>
+                    <a href="<%=displayData.preUrl%>blog/?pageNo=0">Blog</a>
                 </li>
             </ul>
         </nav>

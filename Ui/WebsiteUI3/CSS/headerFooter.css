@@ -593,7 +593,7 @@ select {
     height: 20px;
     display: inline-block;
     vertical-align: middle;
-    background-image: url(../Assets/Images/ssbSelection/icone-new.gif);
+    background-image: url(../assets/images/ssbSelection/icone-new.gif);
 }
 
 .header-slides-item.new-updates .header-slides-content {

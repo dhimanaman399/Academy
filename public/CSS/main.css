@@ -108,7 +108,7 @@ ul li {
 }
 
 /*
-Army Officer Entry Page Css
+Army Officer Entry Page css
 */
 
 .gaArmyOfficerEntry {
@@ -2312,7 +2312,7 @@ tr {
     height: 20px;
     display: inline-block;
     vertical-align: middle;
-    background-image: url(../Assets/Images/ssbSelection/icone-new.gif);
+    background-image: url(../assets/images/ssbSelection/icone-new.gif);
   }
 
   .m-new-updates-text p span {

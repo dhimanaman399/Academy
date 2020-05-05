@@ -7,7 +7,7 @@ const app = express();
 //#region MiddleLayer 
 app.use(express.urlencoded())
 
-app.use(express.static("public"));
+app.use(express.static(__dirname + '/public'));
 
 // Set EJS as templating engine
 app.set("view engine", "ejs");

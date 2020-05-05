@@ -4,6 +4,7 @@ const aboutUsRouter = require("./aboutUs");
 const infoPages = require("./infoPages");
 const gallery = require("./gallery");
 const blog = require("./blog");
+const course = require("./course");
 const adminRouter = require("./admin");
 
 const router = express();
@@ -22,6 +23,17 @@ router.get("/ssb-stage-1", infoPages.SsbStage1);
 router.get("/ssb-stage-2", infoPages.SsbStage2);
 //#endregion
 
+//#region Course
+router.get("/ssbInterview", course.Ssb);
+router.get("/ndacourse", course.Nda);
+router.get("/cdscourse", course.Cds);
+router.get("/afcatcourse", course.Afcat);
+router.get("/acccourse", course.Acc);
+router.get("/armycourse", course.ArmyBelowRank);
+router.get("/navycourse", course.NavyBelowRank);
+router.get("/airforcecourse", course.AirforceBelowRank);
+//#endregion
+
 //#region gallery
 router.get("/selectedcandidatesgallery", gallery.SelectedCandidates);
 router.get("/activitygallery", gallery.Activity);
@@ -29,7 +41,7 @@ router.get("/seminargallery", gallery.Seminar);
 //#endregion
 
 //#region Blog
-router.get("/blog" , blog.Blog);
+router.get("/blog", blog.Blog);
 //#endregion
 
 //#region admin

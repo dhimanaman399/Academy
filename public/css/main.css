@@ -622,8 +622,15 @@ h3.sidebar-title {
   margin-bottom: 13px;
 }
 
-.top-col-item h4.top-name {
+.home-sidebar-widget.sidebar-slides .top-col-item h4.top-name {
   font-weight: 600;
+    margin: 0;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
 
 .top-col-row {
@@ -642,12 +649,36 @@ h3.sidebar-title {
 .top-col-bio {
   text-align: center;
   padding-top: 12px;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
+  margin-bottom: 0;
 }
 
-.top-col-bio p {
+.home-sidebar-widget.sidebar-slides .top-col-bio p {
   margin: 0;
   color: #007bff;
+  text-align: center;
 }
+
+
+.home-sidebar-widget.sidebar-slides .rec-posts-title h4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: .5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+}
+
+.home-sidebar-widget.sidebar-slides .rec-posts-title p.rec-post-date {
+  font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
 
 /*================ blog css ================*/
 
@@ -684,8 +715,24 @@ header.gaheader:after {
 
 main {
   padding-bottom: 40px;
-  padding-top: 40px;
+  padding-top: 0;
 }
+
+section.gaArmyOfficerEntry .card.col-sm-9 {
+  padding-top: 18px;
+}
+
+img.feat-img {
+  margin: 10px;
+  margin-left: 0;
+  width: 100%;
+}
+
+/*==== class form img content ===  */
+.large-img {
+  width: 100%;
+}
+
 
 /*========== Blog css =========*/
 .blog main {
@@ -1448,8 +1495,15 @@ a.fuse_social_icons_links img {
 }
 
 .sidebarContentWrap iframe {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
+}
+
+.sidebar-adss .iframe-wrap > div {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  height: 100%;
 }
 
 /*====================*/
@@ -1930,14 +1984,15 @@ tr {
   margin-right: 5px;
 }
 
-
-
+th.center-th {
+  vertical-align: middle !important;
+}
 /*====== desktop endss ===========*/
 
 /*======== Media Queries =========*/
 
 @media (max-width: 1560px) {
-  .top-col-item h4.top-name {
+  .home-sidebar-widget.sidebar-slides .top-col-item h4.top-name{
     font-size: 20px;
   }
 
@@ -2342,6 +2397,25 @@ tr {
 }
 
 @media (max-width: 640px) {
+
+  .card-group.row {
+    margin: 0;
+}
+
+.card-group.row > div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card-group.row > div > div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+  /*============*/
+
   .custom-section .course-item-inner {
     padding-left: 0;
     padding-right: 0;
@@ -2385,6 +2459,8 @@ tr {
     padding-left: 15px;
     border-bottom: 3px solid #333;
   }
+
+
 
   /*==== 640 endss ========*/
 }

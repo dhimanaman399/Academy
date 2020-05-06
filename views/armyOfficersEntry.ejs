@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=2.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Georgians Academy Specializes in coaching for Defence. Best SSB Coaching in Delhi</title>
-
     <link rel="stylesheet" href="css/headerFooter.css" />
     <link rel="stylesheet" href="css/grid.css" />
-    <link rel="stylesheet" href="/css/main.css" />
-
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <script src="js/main.js"></script>
     <script src="js/static.js"></script>
+    <script src="js/slick.min.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
         <section class="gaArmyOfficerEntry">
             <div class="card-group row">
                 <!--#region Page data -->
-                <div class="card col-sm-9">
+                <div class="home-left-section card col-sm-9">
                     <div class="card-body">
                         <div class="container">
                             <h3 class="gaArmyOfficerEntryHeading">Officer's Entry Routes</h3>
@@ -48,7 +49,7 @@
                                 motherland.
                                 The names of such warriors have been immortalized in the history of Indian army.</p>
 
-                            <img src="assets/images/infoPages/army1.jpg">
+                            <img class="feat-img large-img" src="assets/images/infoPages/army1.jpg">
 
                             <p>There are two main routes of entry into the Army. Both are via prescribed competitive
                                 examinations,
@@ -116,27 +117,30 @@
                             <p>
                                 <b>1. Details of the written examination are given below:</b>
                             </p>
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr class="thead-light">
-                                        <th>Subject</th>
-                                        <th>Duration</th>
-                                        <th>MM</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1. Mathematics</td>
-                                        <td>2½hours</td>
-                                        <td>300</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2. General Ability</td>
-                                        <td>2½hours</td>
-                                        <td>600</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+
+                            <div class="table-wrap">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr class="thead-light">
+                                            <th>Subject</th>
+                                            <th>Duration</th>
+                                            <th>MM</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1. Mathematics</td>
+                                            <td>2½hours</td>
+                                            <td>300</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2. General Ability</td>
+                                            <td>2½hours</td>
+                                            <td>600</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             <p>The maximum marks allotted to the interview round is the same as the maximum marks
                                 allotted
                                 to
@@ -272,54 +276,58 @@
 
                                     <p>For admission to the Indian Military Academy, Naval Academy and AirForce Academy:
                                     </p>
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr class="thead-light">
-                                                <th>Subject</th>
-                                                <th>Duration</th>
-                                                <th>MM</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1. English</td>
-                                                <td>2 hours</td>
-                                                <td>100</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2. General Knowledge</td>
-                                                <td>2 hours</td>
-                                                <td>100</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3. Mathematics</td>
-                                                <td>2 hours</td>
-                                                <td>100</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <div class="table-wrap">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr class="thead-light">
+                                                    <th>Subject</th>
+                                                    <th>Duration</th>
+                                                    <th>MM</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1. English</td>
+                                                    <td>2 hours</td>
+                                                    <td>100</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2. General Knowledge</td>
+                                                    <td>2 hours</td>
+                                                    <td>100</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3. Mathematics</td>
+                                                    <td>2 hours</td>
+                                                    <td>100</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                     <p>For admission to the Officers' Training Academy:</p>
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr class="thead-light">
-                                                <th>Subject</th>
-                                                <th>Duration</th>
-                                                <th>MM</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1. English</td>
-                                                <td>2 hours</td>
-                                                <td>100</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2. General Knowledge</td>
-                                                <td>2 hours</td>
-                                                <td>100</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <div class="table-wrap">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr class="thead-light">
+                                                    <th>Subject</th>
+                                                    <th>Duration</th>
+                                                    <th>MM</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1. English</td>
+                                                    <td>2 hours</td>
+                                                    <td>100</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2. General Knowledge</td>
+                                                    <td>2 hours</td>
+                                                    <td>100</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
 
                                     <ul style="list-style-type:square" class='gaLisItem'>
                                         <li>The standard of examination in Elementary Mathematics will be that of
@@ -345,98 +353,113 @@
                                         specified subjects. All these tests, conducted by the Services Selection Board
                                         (SSB)
                                         are basically intended to judge your mental calibre, and not just intellectual
-                                        qualities, but also social traits and interests in current affairs.</p>
+                                        qualities, but also social traits and interests in current affairs.
+                                    </p>
 
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr class="thead-light">
-                                                <th>How to Apply</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>The notification is published in the Employment News/
-                                                    RozgaarSamachar
-                                                    and leading dailies usually in the months of october/November (for
-                                                    the
-                                                    February examination) and in the month of june/july (for theoctober
-                                                    examination). Candidates have to apply online.
-                                                </td>
-                                            </tr>
-                                    </table>
-                                    <table class="table table-bordered table-hover">
-                                        <thead>
-                                            <tr class="thead-light">
-                                                <th>Type of Entry</th>
-                                                <th>Month of commencement of course</th>
-                                                <th>Age at the time of joining</th>
-                                                <th>Educational qualification</th>
-                                                <th>Mode of Selection</th>
-                                                <th>How to apply</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>TGC(Engg)</td>
-                                                <td>Jan. and July</td>
-                                                <td>20-27yrs</td>
-                                                <td>Engineering Degree in notified discipline</td>
-                                                <td>SSB Interview</td>
-                                                <td>Apply in response to advertisement in March/Apr & Sep/Oct.</td>
 
-                                            </tr>
-                                            <tr>
-                                                <td>TGC(AEC)</td>
-                                                <td>Jan. and July</td>
-                                                <td>23-27yrs</td>
-                                                <td>Post Graduate in notified Subject with 1st/2nd div.</td>
-                                                <td>SSB Interview</td>
-                                                <td>Same as above</td>
-                                            </tr>
-                                            <tr>
-                                                <td>University Entry Scheme(UES)</td>
-                                                <td>July</td>
-                                                <td>18 - 24yrs</td>
-                                                <td>Final and Pre-final years students of Engineering degree course.
-                                                </td>
-                                                <td>Campus interview and SSB interview</td>
-                                                <td>Apply in response to advertisement in June.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>10+2 TES</td>
-                                                <td>Jan. & July</td>
-                                                <td>16½- 19yrs</td>
-                                                <td>10+2 pass with 70% aggregate in PCM.</td>
-                                                <td>Apply directly to the Recruiting Directorate.</td>
-                                                <td>Apply in response to advertisement in May and Nov.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SSC(Non-tech) (Men & women)</td>
-                                                <td>Apr. and Oct</td>
-                                                <td>19-25yrs</td>
-                                                <td>Degree or equivalent at the time of joining the course.</td>
-                                                <td>CDSE conducted by UPSE and SSB interview</td>
-                                                <td>Apply in response to advertisement in March/April &sep./oct</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SSC (Tech) (Men & Women)</td>
-                                                <td>Apr. and Oct</td>
-                                                <td>20 - 27 yrs</td>
-                                                <td>Engineering Degree in notified discipline.</td>
-                                                <td>SSB interview</td>
-                                                <td>Apply in response to advertisement in March/April &sep./oct.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SSC(NCC Entry ) (men & women)</td>
-                                                <td>Apr. and Oct</td>
-                                                <td>19-25yrs</td>
-                                                <td>Graduates with 50% aggregate marks, two years service in NCC Sr. Sr.
-                                                    Division, Army with minimum 'B' Grade in 'C' certificate Exam</td>
-                                                <td>SSB Interview</td>
-                                                <td>Apply in response to advertisement in Dec./Jan & June/July</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+
+                                    <div class="table-wrap">
+
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr class="thead-light">
+                                                    <th>How to Apply</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>The notification is published in the Employment News/
+                                                        RozgaarSamachar
+                                                        and leading dailies usually in the months of october/November
+                                                        (for
+                                                        the
+                                                        February examination) and in the month of june/july (for
+                                                        theoctober
+                                                        examination). Candidates have to apply online.
+                                                    </td>
+                                                </tr>
+                                        </table>
+
+                                    </div>
+
+                                    <div class="table-wrap">
+                                        <table class="table table-bordered table-hover">
+                                            <thead>
+                                                <tr class="thead-light">
+                                                    <th>Type of Entry</th>
+                                                    <th>Month of commencement of course</th>
+                                                    <th>Age at the time of joining</th>
+                                                    <th>Educational qualification</th>
+                                                    <th>Mode of Selection</th>
+                                                    <th>How to apply</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>TGC(Engg)</td>
+                                                    <td>Jan. and July</td>
+                                                    <td>20-27yrs</td>
+                                                    <td>Engineering Degree in notified discipline</td>
+                                                    <td>SSB Interview</td>
+                                                    <td>Apply in response to advertisement in March/Apr & Sep/Oct.</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>TGC(AEC)</td>
+                                                    <td>Jan. and July</td>
+                                                    <td>23-27yrs</td>
+                                                    <td>Post Graduate in notified Subject with 1st/2nd div.</td>
+                                                    <td>SSB Interview</td>
+                                                    <td>Same as above</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>University Entry Scheme(UES)</td>
+                                                    <td>July</td>
+                                                    <td>18 - 24yrs</td>
+                                                    <td>Final and Pre-final years students of Engineering degree course.
+                                                    </td>
+                                                    <td>Campus interview and SSB interview</td>
+                                                    <td>Apply in response to advertisement in June.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10+2 TES</td>
+                                                    <td>Jan. & July</td>
+                                                    <td>16½- 19yrs</td>
+                                                    <td>10+2 pass with 70% aggregate in PCM.</td>
+                                                    <td>Apply directly to the Recruiting Directorate.</td>
+                                                    <td>Apply in response to advertisement in May and Nov.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SSC(Non-tech) (Men & women)</td>
+                                                    <td>Apr. and Oct</td>
+                                                    <td>19-25yrs</td>
+                                                    <td>Degree or equivalent at the time of joining the course.</td>
+                                                    <td>CDSE conducted by UPSE and SSB interview</td>
+                                                    <td>Apply in response to advertisement in March/April &sep./oct</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SSC (Tech) (Men & Women)</td>
+                                                    <td>Apr. and Oct</td>
+                                                    <td>20 - 27 yrs</td>
+                                                    <td>Engineering Degree in notified discipline.</td>
+                                                    <td>SSB interview</td>
+                                                    <td>Apply in response to advertisement in March/April &sep./oct.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SSC(NCC Entry ) (men & women)</td>
+                                                    <td>Apr. and Oct</td>
+                                                    <td>19-25yrs</td>
+                                                    <td>Graduates with 50% aggregate marks, two years service in NCC Sr.
+                                                        Sr.
+                                                        Division, Army with minimum 'B' Grade in 'C' certificate Exam
+                                                    </td>
+                                                    <td>SSB Interview</td>
+                                                    <td>Apply in response to advertisement in Dec./Jan & June/July</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                         </div>
                     </div>
                 </div>

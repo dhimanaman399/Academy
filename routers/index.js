@@ -4,6 +4,7 @@ const aboutUsRouter = require("./aboutUs");
 const infoPages = require("./infoPages");
 const gallery = require("./gallery");
 const blog = require("./blog");
+const previouspapers = require("./previouspapers");
 const course = require("./course");
 const adminRouter = require("./admin");
 
@@ -22,6 +23,11 @@ router.get("/paramilitary-force", infoPages.ParamilitaryForce);
 router.get("/ssb-stage-1", infoPages.SsbStage1);
 router.get("/ssb-stage-2", infoPages.SsbStage2);
 //#endregion
+
+//#region previouspapers
+router.get("/previouspapersnda" , previouspapers.Nda);
+router.get("/previouspaperscds" , previouspapers.Cds);
+//#region 
 
 //#region Course
 router.get("/ssbInterview", course.Ssb);

@@ -84,7 +84,7 @@ ul li {
 }
 
 /*
-  Section ::2 testimonialsubTitle
+Section ::2 testimonialsubTitle
 */
 .testimonialsubTitle {
   color: #33a1d9;
@@ -141,7 +141,7 @@ Army Officer Entry Page css
   font-family: "open sans";
 }
 
-.gaArmyOfficerEntry  h4 {
+.gaArmyOfficerEntry h4 {
   font-size: 16pt;
   color: #333333;
   font-weight: 900;
@@ -160,7 +160,7 @@ Army Officer Entry Page css
   margin-inline-end: 0px;
 }
 
-.gaArmyOfficerEntry  h5 {
+.gaArmyOfficerEntry h5 {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 14px;
@@ -624,13 +624,13 @@ h3.sidebar-title {
 
 .home-sidebar-widget.sidebar-slides .top-col-item h4.top-name {
   font-weight: 600;
-    margin: 0;
-    font-size: 1.5rem;
-    margin-bottom: .5rem;
-    line-height: 1.2;
-    color: #333;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
+  margin: 0;
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+  line-height: 1.2;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
 
 .top-col-row {
@@ -1499,7 +1499,7 @@ a.fuse_social_icons_links img {
   width: 100%;
 }
 
-.sidebar-adss .iframe-wrap > div {
+.sidebar-adss .iframe-wrap>div {
   overflow: hidden;
   position: relative;
   display: flex;
@@ -1937,10 +1937,10 @@ tr {
 }
 
 .pdfs-item .btn:hover {
-  background: #0667d0;  
+  background: #0667d0;
 }
 
-.prev-exam-pdfs tbody > tr {
+.prev-exam-pdfs tbody>tr {
   width: 100%;
 }
 
@@ -1948,11 +1948,11 @@ tr {
   width: 100%;
 }
 
-.prev-exam-pdfs tbody > tr > td {
+.prev-exam-pdfs tbody>tr>td {
   width: 50%;
 }
 
-.pdf-source-wrap tbody tr > td {
+.pdf-source-wrap tbody tr>td {
   padding: 10px;
   padding-right: 5px;
   font-size: 14px;
@@ -1987,12 +1987,36 @@ tr {
 th.center-th {
   vertical-align: middle !important;
 }
+
+.top-col-item {}
+
+.blog-sidebar .top-col-item .top-col-row {
+  display: block;
+  text-align: center;
+  text-shadow: 0 0 black;
+  padding: 0;
+}
+
+.blog-sidebar .top-col-item .top-col-row p.top-rank {
+  margin-bottom: 0;
+}
+
+.blog-sidebar .top-col-item .top-col-row h4.top-name {
+  font-weight: 700;
+}
+
+.blog-sidebar .top-col-item .top-col-row p {
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+
 /*====== desktop endss ===========*/
 
 /*======== Media Queries =========*/
 
 @media (max-width: 1560px) {
-  .home-sidebar-widget.sidebar-slides .top-col-item h4.top-name{
+  .home-sidebar-widget.sidebar-slides .top-col-item h4.top-name {
     font-size: 20px;
   }
 
@@ -2400,17 +2424,17 @@ th.center-th {
 
   .card-group.row {
     margin: 0;
-}
+  }
 
-.card-group.row > div {
+  .card-group.row>div {
     padding-left: 0;
     padding-right: 0;
-}
+  }
 
-.card-group.row > div > div {
+  .card-group.row>div>div {
     padding-left: 0;
     padding-right: 0;
-}
+  }
 
 
 

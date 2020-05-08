@@ -6,6 +6,7 @@ const gallery = require("./gallery");
 const blog = require("./blog");
 const previouspapers = require("./previouspapers");
 const course = require("./course");
+const news = require("./news");
 const adminRouter = require("./admin");
 
 const router = express();
@@ -25,9 +26,9 @@ router.get("/ssb-stage-2", infoPages.SsbStage2);
 //#endregion
 
 //#region previouspapers
-router.get("/previouspapersnda" , previouspapers.Nda);
-router.get("/previouspaperscds" , previouspapers.Cds);
-//#region 
+router.get("/previouspapersnda", previouspapers.Nda);
+router.get("/previouspaperscds", previouspapers.Cds);
+//#endregion
 
 //#region Course
 router.get("/ssbInterview", course.Ssb);
@@ -44,6 +45,11 @@ router.get("/airforcecourse", course.AirforceBelowRank);
 router.get("/selectedcandidatesgallery", gallery.SelectedCandidates);
 router.get("/activitygallery", gallery.Activity);
 router.get("/seminargallery", gallery.Seminar);
+//#endregion
+
+//#region
+router.get("/currentaffairsmonthly", news.CurrentAffairsMonthly);
+router.get("/currentaffairsdaily", news.CurrentAffairsDaily);
 //#endregion
 
 //#region Blog

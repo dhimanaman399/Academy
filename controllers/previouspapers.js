@@ -1,37 +1,119 @@
 const express = require("express");
 const fs = require("fs");
+const path = require("path");
 
 module.exports = {
   Nda: (req, res) => {
-    let currentyear = new Date().getFullYear();
-    console.log(currentyear);
+    const directoryPath = path.join(
+      __dirname,
+      "../public/assets/pdf/previousPaper/nda"
+    );
 
-    let url = [];
+    // [ "year" ,  "paper(1/2)" ,  "Subject" , ["Paperurl" , "solutionurl"]]
 
-    let i = currentyear;
-    for (i; i >= currentyear - 10; i--) {
-      // fs.existsSync
-      //console.log(__dirname);
-      //console.log(__filename);
-  //    console.log(process.cwd());
-//      let path = process.cwd() + `\public\assets\pdf\previousPaper\nda\20131G.pdf`;
-      //let path =  "../public/assets/pdf/previousPaper/nda/20131G.pdf";
-      // console.log("Add me ", path);
-      // if (fs.existsSync(path)) {
-      //   console.log("Add me ", path);
-      // }
-      // console.log("###########");
-    }
+    let filelist = fs.readdirSync(directoryPath);
+    filelist.sort();
+    filelist.reverse();
+    let paperlist = [];
 
+    filelist.forEach(ele => {
+      let year = ele.substr(0, 4);
+      let paper = ele.charAt(4);
+      if (paper == 1) {
+        paper = "I";
+      } else if (paper == 2) {
+        paper = "II";
+      }
+      let subject = ele.charAt(5);
+      if (subject == "M") {
+        subject = "Maths";
+      } else if (subject == "G") {
+        subject = "GAT";
+      }
+      let index = IsDataExist(paperlist, year, paper, subject);
+      if (ele.length == 10) {
+        if (index > -1) {
+          paperlist[index][3][0] = ele;
+        } else {
+          let temparr = [year, paper, subject, [ele]];
+          paperlist.push(temparr);
+        }
+      } else if (ele.length == 11) {
+        if (index > -1) {
+          paperlist[index][3][1] = ele;
+        } else {
+          let temparr = [year, paper, subject, ["", ele]];
+          paperlist.push(temparr);
+        }
+      }
+    });
     let displayData = {
-      url: req.url
+      url: req.url,
+      paperlist
     };
     res.render("previousPapersNda", { displayData });
   },
   Cds: (req, res) => {
+    const directoryPath = path.join(
+      __dirname,
+      "../public/assets/pdf/previousPaper/cds"
+    );
+
+    // [ "year" ,  "paper(1/2)" ,  "Subject" , ["Paperurl" , "solutionurl"]]
+
+    let filelist = fs.readdirSync(directoryPath);
+    filelist.sort();
+    filelist.reverse();
+    let paperlist = [];
+
+    filelist.forEach(ele => {
+      let year = ele.substr(0, 4);
+      let paper = ele.charAt(4);
+      if (paper == 1) {
+        paper = "I";
+      } else if (paper == 2) {
+        paper = "II";
+      }
+      let subject = ele.charAt(5);
+      if (subject == "M") {
+        subject = "Mathematics";
+      } else if (subject == "G") {
+        subject = "General Ability";
+      } else if(subject == "E"){
+        subject = "English";
+      }
+      let index = IsDataExist(paperlist, year, paper, subject);
+      if (ele.length == 10) {
+        if (index > -1) {
+          paperlist[index][3][0] = ele;
+        } else {
+          let temparr = [year, paper, subject, [ele]];
+          paperlist.push(temparr);
+        }
+      } else if (ele.length == 11) {
+        if (index > -1) {
+          paperlist[index][3][1] = ele;
+        } else {
+          let temparr = [year, paper, subject, ["", ele]];
+          paperlist.push(temparr);
+        }
+      }
+    });
     let displayData = {
-      url: req.url
+      url: req.url,
+      paperlist
     };
     res.render("previousPapersCds", { displayData });
   }
 };
+
+function IsDataExist(arr, year, paper, subject) {
+  let ans = -1;
+  arr.forEach((ele, index) => {
+    if (ele[0] == year && ele[1] == paper && ele[2] == subject) {
+      ans = index;
+      //break;
+    }
+  });
+  return ans;
+}

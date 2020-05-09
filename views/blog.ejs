@@ -63,7 +63,7 @@
                                         </p>
                                     </div>
                                     <div class="post-text">
-                                        <%=ele[0]%> <%=ele[4]%>
+                                        <%=ele[4]%>
                                     </div>
                                     <div class="more-link-wrap">
                                         <a href="<%=displayData.preUrl%>blog/?no=<%=ele[0]%>">
@@ -98,29 +98,29 @@
                             <%}%>
 
                             <%displayData.paginationUrl.url.forEach((ele)=>{%>
-                                    <li <%if(displayData.paginationUrl.active == ele){%>class="active"<%}%>>
+                            <li <%if(displayData.paginationUrl.active == ele){%>class="active" <%}%>>
                                         <a href="/blog/?pageNo=<%=ele%>">
-                                            <%=ele%>
-                                        </a>
-                                    </li>
+                                <%=ele%>
+                                </a>
+                            </li>
                             <%});%>
 
-                                    <%if(displayData && displayData.paginationUrl && displayData.paginationUrl.next ){%>
-                                    <li class="page-btn next-page">
-                                        <a href="/blog/?pageNo=<%=displayData.paginationUrl.next%>">
-                                            Next
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                    <%}
+                            <%if(displayData && displayData.paginationUrl && displayData.paginationUrl.next ){%>
+                            <li class="page-btn next-page">
+                                <a href="/blog/?pageNo=<%=displayData.paginationUrl.next%>">
+                                    Next
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <%}
                                     else{%>
-                                        <li class="page-btn next-page disabled">
-                                            <a href="">
-                                                Next
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                     <%}%>   
+                            <li class="page-btn next-page disabled">
+                                <a href="">
+                                    Next
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <%}%>   
                                 </ul>
                             </div>
                              <!--#endregion-->

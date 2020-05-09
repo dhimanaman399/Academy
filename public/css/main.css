@@ -962,6 +962,12 @@ p.post-date i {
 }
 
 /*========== blog Post ===========*/
+img.post-feat-img {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
 .blog-post-pagination ul {
   padding: 0;
   margin: 0;

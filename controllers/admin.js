@@ -25,6 +25,6 @@ module.exports = {
     res.render("admincurrentaffairsmonthly");
   },
   SaveCurrentAffairsMonthly: (req, res) => {
-    res.send("Doument Has been uploaded");
+    res.send("Doument Has been uploaded and now you can see in news section");
   }
 };

@@ -1,4 +1,6 @@
 const express = require("express");
+const fs = require("fs");
+const multer = require("multer");
 const homeRouter = require("./home");
 const aboutUsRouter = require("./aboutUs");
 const infoPages = require("./infoPages");
@@ -10,6 +12,28 @@ const news = require("./news");
 const adminRouter = require("./admin");
 
 const router = express();
+
+// #region File Upload Using Multer
+let storage = multer.diskStorage({
+  destination: function(req, file, cb) {
+    if (req.body.username == "sandip" && req.body.pass == "sandip@123") {
+      let dir = "public/assets/pdf/news/currentaffairs/monthly";
+      !fs.existsSync(dir) && fs.mkdirSync(dir);
+      cb(null, dir);
+    } else {
+      let dir = "public/temp";
+      !fs.existsSync(dir) && fs.mkdirSync(dir);
+      cb(null, dir);
+    }
+  },
+  filename: function(req, file, cb) {
+    let filename = req.body.monthyear.split("-");
+    filename = filename[0] + "" + filename[1];
+    cb(null, filename + "." + file.originalname.split(".")[1]);
+  }
+});
+let upload = multer({ storage: storage });
+// #endregion
 
 router.get("/", homeRouter.home);
 router.get("/aboutUS", aboutUsRouter.AboutUs);
@@ -47,7 +71,7 @@ router.get("/activitygallery", gallery.Activity);
 router.get("/seminargallery", gallery.Seminar);
 //#endregion
 
-//#region
+//#region news
 router.get("/currentaffairsmonthly", news.CurrentAffairsMonthly);
 router.get("/currentaffairsdaily", news.CurrentAffairsDaily);
 //#endregion
@@ -59,6 +83,16 @@ router.get("/blog", blog.Blog);
 //#region admin
 router.get("/adminssb", adminRouter.ssb);
 router.post("/adminssbsave", adminRouter.ssbSave);
+router.get(
+  "/admincurrentaffairsmonthly",
+  adminRouter.UploadCurrentAffairsMonthly
+);
+router.post(
+  "/admincurrentaffairsmonthlysave",
+  upload.any(),
+  adminRouter.SaveCurrentAffairsMonthly
+);
+
 //#endregion
 
 module.exports = router;

@@ -6,5 +6,11 @@ module.exports = {
   },
   ssbSave: (req, res) => {
     adminController.ssbSave(req, res);
+  },
+  UploadCurrentAffairsMonthly: (req, res) => {
+    adminController.UploadCurrentAffairsMonthly(req, res);
+  },
+  SaveCurrentAffairsMonthly: (req, res) => {
+    adminController.SaveCurrentAffairsMonthly(req, res);
   }
 };

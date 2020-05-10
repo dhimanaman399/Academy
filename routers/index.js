@@ -76,8 +76,9 @@ router.get("/currentaffairsmonthly", news.CurrentAffairsMonthly);
 router.get("/currentaffairsdaily", news.CurrentAffairsDaily);
 //#endregion
 
-//#region Blog
+//#region Blog && successStories
 router.get("/blog", blog.Blog);
+router.get("/successstories" , )
 //#endregion
 
 //#region admin

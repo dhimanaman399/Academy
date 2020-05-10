@@ -1,10 +1,10 @@
 module.exports = {
-  BlogPage: () => {
+  SuccessStories: () => {
     // [SNo , "Title" , "Date" , "Image" , "Dec"]
-    return BlogPageData();
+    return SuccessStoriesPageData();
   },
-  BlogDetails: no => {
-    let data = BlogPageData();
+  SuccessStoriesDetails: no => {
+    let data = SuccessStoriesPageData();
     let index = -1;
     data.forEach((ele, i) => {
       if (ele[0] == no) {
@@ -14,18 +14,18 @@ module.exports = {
     if (index == -1) {
       index = 0;
     }
-    let blogdata = {
+    let successstoriesdata = {
       no: no,
       title: data[index][1],
       data: data[index][2],
       image: data[index][3],
       description: data[index][4]
     };
-    return blogdata;
+    return successstoriesdata;
   }
 };
 
-function BlogPageData() {
+function SuccessStoriesPageData() {
   let dummyData = [
     [
       1,

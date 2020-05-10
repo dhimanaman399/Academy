@@ -1557,7 +1557,7 @@ a.fuse_social_icons_links img {
 }
 
 .filterDiv-img-wrap img {
-  display: none;
+  display: none !important;
 }
 
 .filterDiv-img-wrap {
@@ -2160,7 +2160,6 @@ th.center-th {
     font-size: 13px;
   }
 
-
   .menu-trigger i.fa.fa-icon:after {
     content: "";
     content: "\f067";
@@ -2243,6 +2242,11 @@ th.center-th {
     width: 100%;
     float: none;
     margin-top: 50px;
+  }
+
+
+  .blog-post-content-wrap {
+    padding: 20px;
   }
 
   /*======== Home lay =========*/
@@ -2328,6 +2332,22 @@ th.center-th {
   }
 
 
+  .ganav>li>a {
+    text-transform: uppercase;
+  }
+
+  .post-item {
+    padding: 20px;
+}
+
+.post-item .post-body {
+  padding-left: 0;
+  padding-right: 0;
+} 
+
+.footer-bio-wrap p {
+  text-align: left !important;
+}
 
   /*======= Gallery Page ========*/
 
@@ -2442,7 +2462,9 @@ th.center-th {
     padding-right: 0;
   }
 
-
+  .post-item h2 {
+    font-size: 22px;
+}
 
   /*============*/
 
